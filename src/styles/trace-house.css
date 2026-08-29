@@ -1,0 +1,878 @@
+/* ========================================
+   TRACE HOUSE / OLD HOUSE
+======================================== */
+
+.trace-house {
+  overflow: hidden;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.trace-house__hero {
+  padding:
+    190px
+    clamp(28px, 5vw, 80px)
+    120px;
+}
+
+.trace-house__hero-inner,
+.trace-house__wide-inner,
+.trace-house__final-inner {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.trace-house__hero-inner {
+  text-align: center;
+}
+
+.trace-house__eyebrow,
+.trace-house__step {
+  margin: 0;
+
+  color: rgba(37, 40, 35, 0.36);
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+}
+
+.trace-house__category {
+  margin: 14px 0 0;
+
+  color: var(--muted);
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+}
+
+.trace-house__heading {
+  margin: 18px 0 0;
+
+  font-size: clamp(30px, 3.4vw, 44px);
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.09em;
+}
+
+.trace-house__intro {
+  margin: 34px auto 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+
+  line-height: 2.1;
+  letter-spacing: 0.03em;
+}
+
+
+/* ========================================
+   COMMON
+======================================== */
+
+.trace-house figure {
+  margin: 0;
+}
+
+.trace-house__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.trace-house__story {
+  padding:
+    130px
+    clamp(28px, 5vw, 80px);
+}
+
+.trace-house__wide-inner {
+  display: flex;
+  flex-direction: column;
+
+  gap: clamp(50px, 7vw, 90px);
+}
+
+.trace-house__copy {
+  min-width: 0;
+}
+
+.trace-house__section-copy {
+  width: min(100%, 580px);
+}
+
+.trace-house__step {
+  margin-bottom: 14px;
+}
+
+.trace-house__title,
+.trace-house__final-title {
+  margin: 0;
+
+  font-size: clamp(26px, 2.8vw, 36px);
+  font-weight: 500;
+
+  line-height: 1.6;
+  letter-spacing: 0.07em;
+}
+
+.trace-house__body,
+.trace-house__lead-copy {
+  color: var(--muted);
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 2.05;
+  letter-spacing: 0.02em;
+}
+
+.trace-house__body {
+  margin-top: 28px;
+}
+
+.trace-house__body p,
+.trace-house__lead-copy p {
+  margin: 0;
+}
+
+.trace-house__body p + p,
+.trace-house__lead-copy p + p {
+  margin-top: 18px;
+}
+
+.trace-house__split {
+  display: grid;
+
+  gap: clamp(64px, 8vw, 120px);
+
+  align-items: start;
+}
+
+.trace-house__split--copy-left {
+  grid-template-columns:
+    minmax(300px, 0.72fr)
+    minmax(0, 1.28fr);
+}
+
+.trace-house__split--image-left {
+  grid-template-columns:
+    minmax(0, 1.12fr)
+    minmax(300px, 0.78fr);
+}
+
+
+/* ========================================
+   PROLOGUE
+======================================== */
+
+.trace-house__lead {
+  padding:
+    120px
+    clamp(28px, 5vw, 80px)
+    150px;
+
+  background: var(--surface);
+}
+
+.trace-house__lead-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(280px, 0.72fr)
+    minmax(0, 1.28fr);
+
+  gap: clamp(70px, 9vw, 140px);
+
+  align-items: start;
+}
+
+.trace-house__lead-copy {
+  width: min(100%, 470px);
+}
+
+.trace-house__lead-key {
+  color: var(--foreground);
+
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+
+.trace-house__lead-image {
+  width: 100%;
+}
+
+
+/* ========================================
+   01 / DEMOLITION
+======================================== */
+
+.trace-house__story--demolition {
+  background: var(--background);
+}
+
+.trace-house__demolition-image {
+  width: 100%;
+}
+
+
+/* ========================================
+   02 / WATER
+======================================== */
+
+.trace-house__story--water {
+  background: #e9e5dc;
+}
+
+.trace-house__water-image {
+  width: min(100%, 680px);
+}
+
+
+/* ========================================
+   03 / IMAGINE
+======================================== */
+
+.trace-house__story--imagine {
+  background: var(--background);
+}
+
+.trace-house__imagine-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(300px, 0.72fr)
+    minmax(0, 1.28fr);
+
+  gap: clamp(70px, 8vw, 120px);
+
+  align-items: start;
+}
+
+/* 2枚の写真を横並び・同じ高さで配置 */
+.trace-house__imagine-images {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: clamp(16px, 2vw, 28px);
+
+  align-items: start;
+}
+
+.trace-house__imagine-images figure {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+/* 縦横比の異なる写真を同じ枠に合わせる */
+.trace-house__imagine-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* ========================================
+   04 / MATERIALS
+======================================== */
+
+.trace-house__story--materials {
+  background: var(--surface);
+}
+
+/* テキストと写真を横並びにする */
+.trace-house__materials-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(300px, 0.72fr)
+    minmax(0, 1.28fr);
+
+  gap: clamp(70px, 8vw, 120px);
+
+  align-items: start;
+}
+
+/* 上に横長1枚、下に縦長2枚 */
+.trace-house__materials-gallery {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: clamp(20px, 3vw, 38px);
+
+  align-items: start;
+}
+
+/* 上段の横長写真は2列いっぱい */
+.trace-house__materials-main {
+  grid-column: 1 / -1;
+
+  width: 100%;
+}
+
+/* 下段2枚の上端を揃える */
+.trace-house__materials-gallery > figure:not(.trace-house__materials-main) {
+  margin-top: 0;
+}
+
+/* 写真は元の比率を維持 */
+.trace-house__materials-gallery .trace-house__image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+/* ========================================
+   05 / EARTH WALL
+======================================== */
+
+.trace-house__story--wall {
+  background: #e9e5dc;
+}
+
+/* 3枚の工程写真を横一列・上端揃え */
+.trace-house__process--wall {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: clamp(18px, 2.8vw, 34px);
+
+  align-items: start;
+}
+
+
+/* ========================================
+   06 / WORKSHOP
+======================================== */
+
+.trace-house__story--workshop {
+  background: var(--background);
+}
+
+/* 工程写真5枚を文章の下に横一列で配置 */
+.trace-house__process--workshop {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: clamp(10px, 1.4vw, 20px);
+
+  /* テキストと写真の間隔 */
+  margin-top: clamp(24px, 5vw, 36px);
+
+  align-items: start;
+}
+
+/* すべての写真を4:3に統一 */
+.trace-house__process--workshop figure {
+  aspect-ratio: 4 / 3;
+
+  overflow: hidden;
+}
+
+/* 元写真の縦横比にかかわらず同じ枠にトリミング */
+.trace-house__workshop-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* ========================================
+   07 / LIVING
+======================================== */
+
+.trace-house__story--living {
+  background: var(--surface);
+}
+
+/* 左：文章 ／ 右：写真 */
+.trace-house__living-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(300px, 0.72fr)
+    minmax(0, 1.28fr);
+
+  gap: clamp(70px, 8vw, 120px);
+
+  align-items: start;
+}
+
+/* 上1枚＋下3枚 */
+.trace-house__living-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: clamp(14px, 1.8vw, 24px);
+
+  align-items: start;
+}
+
+/* キッチンは写真エリアの横幅いっぱい */
+.trace-house__living-wide {
+  grid-column: 1 / -1;
+}
+
+/* 段差をつくらない */
+.trace-house__living-grid figure {
+  margin: 0;
+}
+
+
+/* ========================================
+   08 / FINAL
+======================================== */
+
+.trace-house__final {
+  padding:
+    clamp(150px, 16vw, 230px)
+    28px
+    clamp(160px, 18vw, 260px);
+
+  background: var(--background);
+}
+
+.trace-house__final-inner {
+  width: min(100%, 1180px);
+
+  margin: 0 auto;
+}
+
+.trace-house__final-copy {
+  max-width: 520px;
+  margin-bottom: 48px;
+}
+
+.trace-house__final-title {
+  margin: 18px 0 0;
+
+  font-size: clamp(30px, 3vw, 43px);
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: 0.06em;
+}
+
+/* 改修後の室内を大きく見せる */
+.trace-house__final-main {
+  width: 100%;
+
+  margin-top: 0;
+}
+
+/* 施工初期と現在を横並びにする */
+.trace-house__final-bottom {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: clamp(20px, 3vw, 38px);
+
+  width: 100%;
+
+  margin-top: clamp(28px, 4vw, 48px);
+
+  align-items: start;
+}
+
+/* 2枚とも上端を揃える */
+.trace-house__final-bottom figure {
+  margin: 0;
+}
+
+/* ========================================
+   BACK
+======================================== */
+
+.trace-house__back {
+  padding:
+    90px
+    clamp(28px, 5vw, 80px)
+    120px;
+
+  background: #dfe2d7;
+
+  text-align: center;
+}
+
+.trace-house__back-link {
+  display: inline-flex;
+
+  align-items: center;
+  gap: 20px;
+
+  padding-bottom: 7px;
+
+  border-bottom: 1px solid rgba(37, 40, 35, 0.35);
+
+  color: var(--foreground);
+
+  font-size: 12px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.07em;
+
+  text-decoration: none;
+
+  transition: opacity 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .trace-house__back-link:hover {
+    opacity: 0.55;
+  }
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+  .trace-house__lead-layout,
+  .trace-house__split--copy-left,
+  .trace-house__split--image-left,
+  .trace-house__imagine-layout,
+  .trace-house__materials-layout,
+  .trace-house__workshop-layout {
+    gap: 54px;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+  .trace-house__hero {
+    padding:
+      138px
+      22px
+      78px;
+  }
+
+  .trace-house__heading {
+    margin-top: 16px;
+
+    font-size: 29px;
+  }
+
+  .trace-house__intro {
+    margin-top: 28px;
+
+    font-size: 13px;
+    line-height: 1.95;
+  }
+
+
+  /* ========================================
+     PROLOGUE
+  ======================================== */
+
+  .trace-house__lead {
+    padding:
+      92px
+      22px
+      110px;
+  }
+
+  .trace-house__lead-layout {
+    display: flex;
+    flex-direction: column;
+
+    gap: 42px;
+
+    align-items: stretch;
+  }
+
+  .trace-house__lead-image {
+    width: 92%;
+
+    margin-left: auto;
+  }
+
+
+  /* ========================================
+     COMMON
+  ======================================== */
+
+  .trace-house__story {
+    padding:
+      88px
+      22px
+      96px;
+  }
+
+  .trace-house__wide-inner {
+    gap: 42px;
+  }
+
+  .trace-house__title,
+  .trace-house__final-title {
+    font-size: 27px;
+  }
+
+  .trace-house__body,
+  .trace-house__lead-copy {
+    font-size: 13px;
+    line-height: 1.95;
+  }
+
+  .trace-house__body {
+    margin-top: 24px;
+  }
+
+  .trace-house__split,
+  .trace-house__imagine-layout,
+  .trace-house__materials-layout,
+  .trace-house__workshop-layout {
+    display: flex;
+    flex-direction: column;
+
+    gap: 38px;
+  }
+
+
+  /* ========================================
+     01 / DEMOLITION
+  ======================================== */
+
+  .trace-house__demolition-image {
+    width: 100%;
+  }
+
+
+  /* ========================================
+     02 / WATER
+  ======================================== */
+
+  .trace-house__water-image {
+    width: 88%;
+  }
+
+
+  /* ========================================
+     03 / IMAGINE
+  ======================================== */
+
+  .trace-house__imagine-images {
+    gap: 10px;
+  }
+
+
+  /* ========================================
+     04 / MATERIALS
+  ======================================== */
+
+  .trace-house__materials-gallery {
+    gap: 12px;
+  }
+
+  .trace-house__materials-main {
+    width: 100%;
+  }
+
+
+  /* ========================================
+     05 / EARTH WALL
+  ======================================== */
+
+  .trace-house__process--wall {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 10px;
+  }
+
+
+  /* ========================================
+     06 / WORKSHOP
+  ======================================== */
+
+  .trace-house__process--workshop {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+
+    margin-top: 24px;
+  }
+
+  /* 最後の完成写真だけ横幅いっぱい */
+  .trace-house__process--workshop figure:nth-child(5) {
+    grid-column: 1 / -1;
+  }
+
+
+  /* ========================================
+     07 / LIVING
+  ======================================== */
+
+  /* PCの左右配置をモバイルでは縦並びにする */
+  .trace-house__living-layout {
+    display: flex;
+    flex-direction: column;
+
+    gap: 38px;
+  }
+
+  /* キッチン1枚 → 2枚 → トイレ1枚 */
+  .trace-house__living-grid {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+
+    width: 100%;
+  }
+
+  /* キッチンは横幅いっぱい */
+  .trace-house__living-wide {
+    grid-column: 1 / -1;
+  }
+
+  /* 薪ストーブ・浴室は2枚横並び */
+  .trace-house__living-grid figure:nth-child(2),
+  .trace-house__living-grid figure:nth-child(3) {
+    grid-column: auto;
+  }
+
+  /* トイレは横幅いっぱい */
+  .trace-house__living-grid figure:nth-child(4) {
+    grid-column: 1 / -1;
+  }
+
+  .trace-house__living-grid figure {
+    margin: 0;
+  }
+
+
+  /* ========================================
+   08 / FINAL
+======================================== */
+
+.trace-house__final {
+  padding:
+    130px
+    22px
+    130px;
+}
+
+.trace-house__final-main {
+  width: 100%;
+
+  margin-top: 58px;
+}
+
+.trace-house__final-bottom {
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  width: 100%;
+
+  gap: 10px;
+
+  margin-top: 18px;
+}
+
+
+  /* ========================================
+     BACK
+  ======================================== */
+
+  .trace-house__back {
+    padding:
+      72px
+      22px
+      100px;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 520px) {
+  .trace-house__lead-image,
+  .trace-house__water-image {
+    width: 100%;
+  }
+
+
+  /* ========================================
+     05 / EARTH WALL
+  ======================================== */
+
+  /* 05だけは小さい画面で1列に戻す */
+  .trace-house__process--wall {
+    grid-template-columns: 1fr;
+  }
+
+  .trace-house__process--wall figure:nth-child(n) {
+    margin-top: 0;
+
+    grid-column: auto;
+  }
+
+
+  /* ========================================
+     06 / WORKSHOP
+  ======================================== */
+
+  /*
+   * 06は800px以下で設定した
+   * 2列 → 2列 → 最後1枚
+   * の構成をそのまま維持する
+   */
+
+
+  /* ========================================
+     07 / LIVING
+  ======================================== */
+
+  /*
+   * 07も800px以下で設定した
+   * キッチン1枚 → 2枚 → トイレ1枚
+   * の構成をそのまま維持する
+   */
+
+
+  /* ========================================
+     08 / FINAL
+  ======================================== */
+
+}

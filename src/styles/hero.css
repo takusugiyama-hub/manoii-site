@@ -1,0 +1,372 @@
+/* ========================================
+   HERO
+======================================== */
+
+.manoii-world {
+  --hero-progress: 0;
+
+  /*
+   * 元画像: 2217 × 2507px
+   * 地表の基準地点: Y = 1693px
+   */
+  --hero-image-width: min(70vw, 1000px);
+  --hero-ground-ratio: calc(1693 / 2217);
+  --hero-underground-ratio: calc((2507 - 1693) / 2217);
+
+  /*
+   * 初期表示時の画像位置。
+   * マイナスにすると画像全体が上へ移動する。
+   */
+  --hero-offset-y: -20px;
+
+  /*
+   * スクロール時に画像が上へ移動する最大量。
+   */
+  --hero-scroll-shift: 12vh;
+
+  /*
+   * PC版の土の中の文章位置。
+   * 値を大きくすると上へ移動する。
+   */
+  --underground-message-bottom: 40px;
+
+  position: relative;
+
+  min-height:
+    calc(
+      100vh
+      + (
+        var(--hero-image-width)
+        * var(--hero-underground-ratio)
+      )
+      + var(--hero-offset-y)
+    );
+
+  overflow: hidden;
+
+  background: var(--background);
+}
+
+
+/* ========================================
+   HERO IMAGE
+======================================== */
+
+.manoii-world__window {
+  position: absolute;
+  inset: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+}
+
+.manoii-world__position {
+  position: absolute;
+
+  /*
+   * 元画像のY=1693px地点を
+   * 初期表示時のviewport下端へ合わせる。
+   */
+  top:
+    calc(
+      100vh
+      - (
+        var(--hero-image-width)
+        * var(--hero-ground-ratio)
+      )
+      + var(--hero-offset-y)
+    );
+
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.manoii-world__image {
+  position: relative;
+
+  width: var(--hero-image-width);
+  height: auto;
+  max-width: none;
+
+  transform:
+    translateY(
+      calc(
+        var(--hero-progress)
+        * -1
+        * var(--hero-scroll-shift)
+      )
+    );
+
+  transform-origin: 50% 50%;
+
+  user-select: none;
+  pointer-events: none;
+
+  will-change: transform;
+
+  filter:
+    saturate(0.98)
+    contrast(0.99);
+}
+
+
+/* ========================================
+   HERO MESSAGE
+======================================== */
+
+.manoii-world__message-position {
+  position: absolute;
+  z-index: 4;
+
+  top: 30vh;
+  left: 50%;
+
+  width: min(90vw, 1000px);
+
+  transform: translateX(-50%);
+
+  text-align: center;
+}
+
+.manoii-world__message-main {
+  margin: 0;
+
+  color: rgba(37, 40, 35, 0.82);
+
+  font-size: 20px;
+  font-weight: 500;
+
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+}
+
+.manoii-world__message-main span {
+  display: block;
+}
+
+
+/* ========================================
+   UNDERGROUND MESSAGE
+======================================== */
+
+.manoii-world__underground-message {
+  position: absolute;
+  z-index: 4;
+
+  left: 50%;
+  bottom: var(--underground-message-bottom);
+
+  width: min(70vw, 700px);
+
+  transform: translateX(-50%);
+
+  color: rgb(37, 40, 35);
+
+  text-align: center;
+}
+
+.manoii-world__underground-title {
+  margin: 0 0 15px;
+
+  color: rgb(37, 40, 35);
+
+  font-size: 23px;
+  font-weight: 500;
+
+  line-height: 1.55;
+  letter-spacing: 0.06em;
+
+  text-shadow:
+    0 0 2px rgba(247, 245, 240, 1),
+    0 0 5px rgba(247, 245, 240, 0.95),
+    0 0 10px rgba(247, 245, 240, 0.75),
+    0 0 18px rgba(247, 245, 240, 0.45);
+}
+
+.manoii-world__underground-text {
+  color: rgb(37, 40, 35);
+
+  font-size: 16px;
+  font-weight: 500;
+
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+
+  text-shadow:
+    0 0 2px rgba(247, 245, 240, 1),
+    0 0 5px rgba(247, 245, 240, 0.95),
+    0 0 10px rgba(247, 245, 240, 0.75),
+    0 0 18px rgba(247, 245, 240, 0.45);
+}
+
+.manoii-world__underground-text p {
+  margin: 0 0 26px;
+}
+
+.manoii-world__underground-text p:last-child {
+  margin-bottom: 0;
+}
+
+.manoii-world__underground-text strong {
+  font-weight: 500;
+}
+
+.manoii-mobile-only {
+  display: none;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+  .manoii-world {
+    --hero-image-width: 100vw;
+    --hero-offset-y: -40px;
+    --hero-scroll-shift: 7svh;
+
+    /*
+     * 地表から文章までの距離。
+     * 値を大きくすると、より地下へ移動する。
+     */
+    --underground-message-from-ground: 95px;
+
+    /*
+     * 土の文章が見切れないよう、
+     * モバイルではHeroを少し長くする。
+     */
+    min-height:
+      calc(
+        100svh
+        + (
+          var(--hero-image-width)
+          * var(--hero-underground-ratio)
+        )
+        + var(--hero-offset-y)
+        + var(--hero-scroll-shift)
+        + 220px
+      );
+  }
+
+  .manoii-world__position {
+    top:
+      calc(
+        100svh
+        - (
+          var(--hero-image-width)
+          * var(--hero-ground-ratio)
+        )
+        + var(--hero-offset-y)
+      );
+  }
+
+  .manoii-world__image {
+    width: var(--hero-image-width);
+
+    transform:
+      translateY(
+        calc(
+          var(--hero-progress)
+          * -1
+          * var(--hero-scroll-shift)
+        )
+      );
+  }
+
+
+  /* HERO MESSAGE */
+
+  .manoii-world__message-position {
+    top: 20vh;
+
+    width: calc(100% - 34px);
+  }
+
+  .manoii-world__message-main {
+    font-size: 18px;
+    font-weight: 500;
+
+    line-height: 1.7;
+    letter-spacing: 0.06em;
+  }
+
+
+  /* UNDERGROUND MESSAGE */
+
+  .manoii-world__underground-message {
+    bottom: auto;
+
+    /*
+     * 地表位置を基準にして文章を配置する。
+     */
+    top:
+      calc(
+        100svh
+        + var(--hero-offset-y)
+        + var(--underground-message-from-ground)
+      );
+
+    left: 50%;
+
+    width: calc(100% - 44px);
+
+    /*
+     * 画像と同じスクロール移動を与え、
+     * 土との位置関係を保つ。
+     */
+    transform:
+      translateX(-50%)
+      translateY(
+        calc(
+          var(--hero-progress)
+          * -1
+          * var(--hero-scroll-shift)
+        )
+      );
+  }
+
+  .manoii-world__underground-title {
+    margin-bottom: 26px;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    line-height: 1.55;
+    letter-spacing: 0.05em;
+
+    text-shadow:
+      0 0 2px rgba(247, 245, 240, 1),
+      0 0 5px rgba(247, 245, 240, 0.96),
+      0 0 9px rgba(247, 245, 240, 0.78),
+      0 0 15px rgba(247, 245, 240, 0.48);
+  }
+
+  .manoii-world__underground-text {
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 1.7;
+    letter-spacing: 0;
+
+    text-shadow:
+      0 0 2px rgba(247, 245, 240, 1),
+      0 0 5px rgba(247, 245, 240, 0.96),
+      0 0 9px rgba(247, 245, 240, 0.78),
+      0 0 15px rgba(247, 245, 240, 0.48);
+  }
+
+  .manoii-world__underground-text p {
+    margin-bottom: 22px;
+  }
+
+  .manoii-mobile-only {
+    display: block;
+  }
+}

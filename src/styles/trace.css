@@ -1,0 +1,209 @@
+/* ========================================
+   WORKS
+======================================== */
+
+.manoii-trace {
+  padding:
+    120px
+    clamp(28px, 5vw, 80px)
+    160px;
+
+  background: var(--background);
+}
+
+
+.manoii-trace__inner {
+  width: 100%;
+  max-width: var(--content-width);
+
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.manoii-trace__header {
+  text-align: center;
+
+  margin-bottom: 55px;
+}
+
+
+.manoii-trace__heading {
+  margin: 0;
+
+  color: var(--foreground);
+
+  font-size: 24px;
+  font-weight: 500;
+
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+}
+
+
+.manoii-trace__lead {
+  margin:
+    36px
+    0
+    0;
+
+  color: var(--foreground);
+
+  font-size: 20px;
+  font-weight: 400;
+
+  line-height: 2;
+
+  letter-spacing: 0.08em;
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.manoii-trace__image-wrap {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+
+.manoii-trace__image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+.manoii-trace__body {
+  text-align: center;
+
+  margin-top: 55px;
+}
+
+
+.manoii-trace__text {
+  margin:
+    32px
+    0
+    0;
+
+  color: var(--muted);
+
+  font-size: 15px;
+  font-weight: 400;
+
+  line-height: 2.2;
+
+  letter-spacing: 0.05em;
+}
+
+
+/* ========================================
+   LINK
+======================================== */
+
+.manoii-trace__link {
+  margin-top: 85px;
+
+  text-align: center;
+}
+
+
+.manoii-trace__link a {
+  display: inline-block;
+
+  color: var(--foreground);
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+
+  transition:
+    opacity 0.3s ease;
+}
+
+
+.manoii-trace__link a:hover {
+  opacity: 0.6;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+
+  .manoii-trace {
+    padding:
+      90px
+      20px
+      110px;
+  }
+
+
+  .manoii-trace__header {
+    margin-bottom: 40px;
+  }
+
+
+  .manoii-trace__heading {
+    font-size: 20px;
+
+    letter-spacing: 0.09em;
+  }
+
+
+  .manoii-trace__lead {
+    margin-top: 30px;
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    letter-spacing: 0.06em;
+  }
+
+
+  .manoii-trace__body {
+    margin-top: 40px;
+  }
+
+
+  .manoii-trace__text {
+    margin-top: 26px;
+
+    font-size: 13px;
+
+    line-height: 2.1;
+
+    letter-spacing: 0.04em;
+  }
+
+
+  .manoii-trace__link {
+    margin-top: 60px;
+  }
+
+
+  .manoii-trace__link a {
+    font-size: 13px;
+  }
+
+}

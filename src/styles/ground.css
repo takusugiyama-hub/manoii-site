@@ -1,0 +1,222 @@
+/* ========================================
+   GROUND
+======================================== */
+
+.manoii-ground {
+  padding:
+    72px
+    clamp(28px, 5vw, 80px)
+    150px;
+
+  background: var(--surface);
+}
+
+.manoii-ground__inner {
+  width: 100%;
+  max-width: var(--content-width);
+
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.manoii-ground__header {
+  padding-bottom: 58px;
+
+  text-align: center;
+}
+
+.manoii-ground__heading {
+  margin: 0;
+
+  color: var(--foreground);
+
+  font-size: 24px;
+  font-weight: 500;
+
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+}
+
+.manoii-ground__lead {
+  margin:
+    20px
+    0
+    0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 1.9;
+  letter-spacing: 0.035em;
+}
+
+
+/* ========================================
+   GRID
+======================================== */
+
+.manoii-ground__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  column-gap:
+    clamp(24px, 3vw, 46px);
+}
+
+.manoii-ground__item {
+  min-width: 0;
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.manoii-ground__image-wrap {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 4 / 3;
+
+  overflow: hidden;
+
+  background: var(--image-placeholder);
+}
+
+.manoii-ground__image {
+  object-fit: cover;
+
+  filter:
+    saturate(0.92)
+    contrast(0.98);
+
+  transition:
+    transform 0.7s ease,
+    filter 0.7s ease;
+}
+
+@media (hover: hover) {
+  .manoii-ground__item:hover
+  .manoii-ground__image {
+    transform: scale(1.018);
+
+    filter:
+      saturate(0.98)
+      contrast(1);
+  }
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.manoii-ground__content {
+  padding-top: 24px;
+
+  text-align: center;
+}
+
+.manoii-ground__title {
+  margin: 0;
+
+  color: var(--foreground);
+
+  font-size: 19px;
+  font-weight: 500;
+
+  line-height: 1.6;
+  letter-spacing: 0.07em;
+}
+
+.manoii-ground__text {
+  max-width: 24em;
+
+  margin:
+    14px
+    auto
+    0;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+  .manoii-ground {
+    padding:
+      58px
+      22px
+      100px;
+  }
+
+  .manoii-ground__header {
+    padding-bottom: 42px;
+  }
+
+  .manoii-ground__heading {
+    font-size: 20px;
+
+    letter-spacing: 0.09em;
+  }
+
+  .manoii-ground__lead {
+    margin-top: 16px;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+  }
+
+
+  /* GRID */
+
+  .manoii-ground__grid {
+    grid-template-columns: 1fr;
+
+    row-gap: 54px;
+  }
+
+
+  /* CONTENT */
+
+  .manoii-ground__content {
+    padding-top: 20px;
+  }
+
+  .manoii-ground__title {
+    font-size: 18px;
+
+    letter-spacing: 0.06em;
+  }
+
+  .manoii-ground__text {
+    max-width: 28em;
+
+    margin-top: 10px;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+    letter-spacing: 0.015em;
+  }
+}

@@ -1,0 +1,919 @@
+/* ========================================
+   TRACE SHRINE
+======================================== */
+
+.trace-shrine {
+  overflow: hidden;
+
+  background: var(--background);
+  color: var(--foreground);
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.trace-shrine__hero {
+  padding:
+    190px
+    clamp(28px, 5vw, 80px)
+    120px;
+}
+
+.trace-shrine__hero-inner,
+.trace-shrine__story-inner,
+.trace-shrine__wide-inner,
+.trace-shrine__later-inner,
+.trace-shrine__epilogue-inner {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.trace-shrine__hero-inner {
+  text-align: center;
+}
+
+.trace-shrine__eyebrow {
+  margin: 0;
+
+  color: rgba(37, 40, 35, 0.42);
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+}
+
+.trace-shrine__category {
+  margin: 14px 0 0;
+
+  color: var(--muted);
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+}
+
+.trace-shrine__heading {
+  margin: 18px 0 0;
+
+  font-size: clamp(30px, 3.4vw, 44px);
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.09em;
+}
+
+.trace-shrine__intro {
+  margin: 34px auto 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 2.1;
+  letter-spacing: 0.03em;
+}
+
+
+/* ========================================
+   COMMON
+======================================== */
+
+.trace-shrine__story {
+  padding:
+    130px
+    clamp(28px, 5vw, 80px);
+}
+
+.trace-shrine__story-inner {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.08fr)
+    minmax(320px, 0.78fr);
+
+  gap: clamp(64px, 8vw, 120px);
+
+  align-items: start;
+}
+
+.trace-shrine__wide-inner {
+  display: flex;
+  flex-direction: column;
+
+  gap: clamp(50px, 7vw, 90px);
+}
+
+.trace-shrine__copy {
+  min-width: 0;
+}
+
+.trace-shrine__section-copy {
+  width: min(100%, 580px);
+}
+
+.trace-shrine__step {
+  margin: 0 0 14px;
+
+  color: rgba(37, 40, 35, 0.36);
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+}
+
+.trace-shrine__title {
+  margin: 0;
+
+  font-size: clamp(26px, 2.8vw, 36px);
+  font-weight: 500;
+
+  line-height: 1.6;
+  letter-spacing: 0.07em;
+}
+
+.trace-shrine__body {
+  margin-top: 28px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 2.05;
+  letter-spacing: 0.02em;
+}
+
+.trace-shrine__body p {
+  margin: 0;
+}
+
+.trace-shrine__body p + p {
+  margin-top: 18px;
+}
+
+.trace-shrine figure {
+  margin: 0;
+}
+
+.trace-shrine__image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+.trace-shrine__caption {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 11px;
+  font-weight: 400;
+
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+
+/* ========================================
+   PURPOSE
+======================================== */
+
+.trace-shrine__story--purpose {
+  background: var(--surface);
+}
+
+.trace-shrine__story--purpose
+  .trace-shrine__wide-inner {
+  gap: 0;
+}
+
+.trace-shrine__purpose-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(280px, 420px);
+
+  gap: clamp(60px, 8vw, 120px);
+
+  align-items: start;
+
+  margin-top: 14px;
+}
+
+.trace-shrine__purpose-image {
+  width: 100%;
+}
+
+
+/* ========================================
+   OLD U-DITCH
+======================================== */
+
+.trace-shrine__story--ditch {
+  background: var(--background);
+}
+
+.trace-shrine__story--ditch
+  .trace-shrine__wide-inner {
+  gap: 0;
+}
+
+.trace-shrine__ditch-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.08fr)
+    minmax(320px, 0.78fr);
+
+  gap: clamp(64px, 8vw, 120px);
+
+  align-items: start;
+
+  margin-top: 14px;
+}
+
+.trace-shrine__ditch-main {
+  width: min(100%, 520px);
+}
+
+.trace-shrine .trace-shrine__buried-waste {
+  width: min(100%, 280px);
+  margin-top: 42px;
+}
+
+.trace-shrine__buried-waste .trace-shrine__caption {
+  margin-top: 10px;
+}
+
+/* ========================================
+   REVERSE U-DITCH
+======================================== */
+
+.trace-shrine__story--reverse {
+  background: #e9e5dc;
+}
+
+.trace-shrine__story--reverse
+  .trace-shrine__wide-inner {
+  gap: 0;
+}
+
+.trace-shrine__reverse-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(300px, 0.72fr)
+    minmax(0, 1.28fr);
+
+  gap: clamp(70px, 8vw, 120px);
+
+  align-items: start;
+
+  margin-top: 14px;
+}
+
+.trace-shrine__reverse-gallery {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.25fr)
+    minmax(220px, 0.75fr);
+
+  gap:
+    clamp(28px, 4vw, 54px)
+    clamp(22px, 3vw, 40px);
+
+  align-items: start;
+}
+
+.trace-shrine__reverse-main {
+  width: 100%;
+}
+
+.trace-shrine__reverse-detail {
+  width: 100%;
+}
+
+.trace-shrine__reverse-lower {
+  grid-column: 2;
+
+  width: 100%;
+  margin-top: clamp(18px, 3vw, 44px);
+}
+
+
+/* ========================================
+   TERRACING
+======================================== */
+
+.trace-shrine__story--terrace {
+  background: var(--background);
+}
+
+.trace-shrine__story--terrace
+  .trace-shrine__wide-inner {
+  gap: 0;
+}
+
+.trace-shrine__terrace-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(280px, 420px)
+    minmax(0, 1fr);
+
+  gap: clamp(60px, 8vw, 120px);
+
+  align-items: start;
+
+  margin-top: 14px;
+}
+
+.trace-shrine__terrace-image {
+  width: 100%;
+}
+
+/* ========================================
+   SHIGARA
+======================================== */
+
+.trace-shrine__story--shigara {
+  background: var(--surface);
+}
+
+.trace-shrine__story--shigara
+  .trace-shrine__wide-inner {
+  gap: 0;
+}
+
+.trace-shrine__shigara-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(300px, 0.78fr)
+    minmax(0, 1.22fr);
+
+  gap: clamp(70px, 8vw, 120px);
+
+  align-items: start;
+
+  margin-top: 14px;
+}
+
+.trace-shrine__shigara-gallery {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(220px, 0.72fr);
+
+  gap: clamp(22px, 3vw, 40px);
+
+  align-items: start;
+}
+
+.trace-shrine__shigara-main {
+  width: 100%;
+}
+
+.trace-shrine__shigara-detail {
+  width: 100%;
+  margin-top: clamp(50px, 7vw, 90px);
+}
+
+.trace-shrine__shigara-note {
+  width: min(100%, 540px);
+  margin-top: clamp(80px, 9vw, 130px);
+  margin-left: auto;
+}
+
+.trace-shrine__shigara-note .trace-shrine__body {
+  margin-top: 0;
+}
+
+.trace-shrine__body .trace-shrine__shigara-turn {
+  margin-top: 72px;
+}
+
+
+/* ========================================
+   AFTER
+======================================== */
+
+.trace-shrine__story--after {
+  background: var(--background);
+}
+
+.trace-shrine__after-main {
+  width: 100%;
+}
+
+.trace-shrine__after-bottom {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(260px, 0.58fr);
+
+  gap: clamp(60px, 8vw, 120px);
+
+  align-items: start;
+}
+
+.trace-shrine__after-bottom .trace-shrine__body {
+  width: min(100%, 540px);
+  margin-top: 0;
+}
+
+.trace-shrine__after-detail {
+  width: min(100%, 420px);
+  justify-self: end;
+}
+
+
+/* ========================================
+   HALF A YEAR LATER
+======================================== */
+
+.trace-shrine__later {
+  padding:
+    clamp(170px, 18vw, 260px)
+    clamp(28px, 5vw, 80px)
+    clamp(150px, 16vw, 230px);
+
+  background: #dfe2d7;
+}
+
+.trace-shrine__later-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.trace-shrine__later-eyebrow {
+  margin: 0;
+
+  color: rgba(37, 40, 35, 0.42);
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+}
+
+.trace-shrine__later-title {
+  margin: 18px 0 0;
+
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.09em;
+}
+
+.trace-shrine__later-images {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 0.72fr)
+    minmax(0, 1fr);
+
+  gap: clamp(22px, 4vw, 54px);
+
+  width: 86%;
+  margin-top: clamp(70px, 9vw, 120px);
+}
+
+.trace-shrine__later-images figure:nth-child(2) {
+  margin-top: clamp(60px, 8vw, 110px);
+}
+
+.trace-shrine__later-copy {
+  width: min(100%, 580px);
+  margin-top: clamp(70px, 9vw, 120px);
+  margin-left: auto;
+}
+
+
+/* ========================================
+   EPILOGUE
+======================================== */
+
+.trace-shrine__epilogue {
+  padding:
+    clamp(150px, 16vw, 230px)
+    clamp(28px, 5vw, 80px)
+    clamp(160px, 18vw, 250px);
+
+  background: var(--background);
+}
+
+.trace-shrine__epilogue-inner {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 0.8fr)
+    minmax(320px, 0.9fr);
+
+  gap: clamp(70px, 10vw, 150px);
+
+  align-items: start;
+}
+
+.trace-shrine__epilogue-title {
+  margin: 0;
+
+  font-size: clamp(28px, 3.2vw, 42px);
+  font-weight: 500;
+
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+}
+
+.trace-shrine__epilogue-copy .trace-shrine__body {
+  margin-top: 0;
+}
+
+
+/* ========================================
+   BACK
+======================================== */
+
+.trace-shrine__back {
+  padding:
+    0
+    clamp(28px, 5vw, 80px)
+    140px;
+
+  background: var(--background);
+
+  text-align: center;
+}
+
+.trace-shrine__back-link {
+  display: inline-flex;
+
+  align-items: center;
+  gap: 20px;
+
+  padding-bottom: 7px;
+
+  border-bottom: 1px solid rgba(37, 40, 35, 0.35);
+
+  color: var(--foreground);
+
+  font-size: 12px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.07em;
+
+  text-decoration: none;
+
+  transition: opacity 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .trace-shrine__back-link:hover {
+    opacity: 0.55;
+  }
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+  .trace-shrine__story-inner {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(280px, 0.8fr);
+
+    gap: 54px;
+  }
+
+  .trace-shrine__epilogue-inner {
+    grid-template-columns:
+      minmax(0, 0.85fr)
+      minmax(280px, 1fr);
+
+    gap: 58px;
+  }
+
+  .trace-shrine__reverse-images {
+    width: 94%;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+  .trace-shrine__hero {
+    padding:
+      138px
+      22px
+      78px;
+  }
+
+  .trace-shrine__heading {
+    margin-top: 16px;
+
+    font-size: 29px;
+  }
+
+  .trace-shrine__intro {
+    margin-top: 28px;
+
+    font-size: 13px;
+
+    line-height: 1.95;
+  }
+
+
+  /* COMMON */
+
+  .trace-shrine__story {
+    padding:
+      88px
+      22px
+      96px;
+  }
+
+  .trace-shrine__story-inner {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+  }
+
+  .trace-shrine__wide-inner {
+    gap: 42px;
+  }
+
+  .trace-shrine__section-copy {
+    width: 100%;
+  }
+
+  .trace-shrine__title {
+    font-size: 27px;
+  }
+
+  .trace-shrine__body {
+    margin-top: 24px;
+
+    font-size: 13px;
+
+    line-height: 1.95;
+  }
+
+
+/* PURPOSE */
+
+.trace-shrine__purpose-layout {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+
+  margin-top: 14px;
+}
+
+.trace-shrine__purpose-image {
+  width: 82%;
+  margin-left: auto;
+}
+
+
+  /* U-DITCH */
+
+  .trace-shrine__ditch-layout {
+    display: flex;
+    flex-direction: column;
+
+    gap: 34px;
+
+    margin-top: 14px;
+  }
+
+  .trace-shrine__ditch-main {
+    width: 82%;
+  }
+
+  .trace-shrine .trace-shrine__buried-waste {
+    width: min(72%, 280px);
+    margin-top: 34px;
+  }
+
+  .trace-shrine__buried-waste .trace-shrine__caption {
+    margin-top: 10px;
+  }
+
+
+ /* REVERSE U-DITCH */
+
+.trace-shrine__reverse-layout {
+  display: flex;
+  flex-direction: column;
+
+  gap: 36px;
+
+  margin-top: 14px;
+}
+
+.trace-shrine__reverse-gallery {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(0, 0.85fr);
+
+  gap:
+    18px
+    12px;
+
+  width: 100%;
+}
+
+.trace-shrine__reverse-main {
+  width: 100%;
+}
+
+.trace-shrine__reverse-detail {
+  width: 100%;
+}
+
+.trace-shrine__reverse-lower {
+  grid-column: 2;
+
+  width: 100%;
+  margin-top: 18px;
+}
+
+
+  /* TERRACING */
+
+  .trace-shrine__terrace-image {
+    order: 2;
+
+    width: 78%;
+    margin-left: auto;
+  }
+
+
+  /* SHIGARA */
+
+  .trace-shrine__shigara-images {
+    grid-template-columns:
+      minmax(0, 1.15fr)
+      minmax(0, 0.85fr);
+
+    gap: 12px;
+  }
+
+  .trace-shrine__shigara-images figure:nth-child(2) {
+    margin-top: 36px;
+  }
+
+  .trace-shrine__shigara-note {
+    width: 100%;
+  }
+
+
+  /* AFTER */
+
+  .trace-shrine__after-bottom {
+    grid-template-columns: 1fr;
+
+    gap: 42px;
+  }
+
+  .trace-shrine__after-detail {
+    width: 64%;
+    margin-left: auto;
+  }
+
+
+  /* HALF A YEAR LATER */
+
+  .trace-shrine__later {
+    padding:
+      130px
+      22px
+      140px;
+  }
+
+  .trace-shrine__later-title {
+    font-size: 34px;
+  }
+
+  .trace-shrine__later-images {
+    width: 100%;
+    margin-top: 58px;
+
+    grid-template-columns:
+      minmax(0, 0.82fr)
+      minmax(0, 1fr);
+
+    gap: 12px;
+  }
+
+  .trace-shrine__later-images figure:nth-child(2) {
+    margin-top: 34px;
+  }
+
+  .trace-shrine__later-copy {
+    width: 100%;
+    margin-top: 62px;
+  }
+
+
+  /* EPILOGUE */
+
+  .trace-shrine__epilogue {
+    padding:
+      120px
+      22px
+      140px;
+  }
+
+  .trace-shrine__epilogue-inner {
+    display: flex;
+    flex-direction: column;
+
+    gap: 56px;
+  }
+
+  .trace-shrine__epilogue-title {
+    font-size: 30px;
+  }
+
+  .trace-shrine__epilogue-copy {
+    width: 100%;
+  }
+
+  /* CREDIT */
+
+  .trace-shrine__credit {
+    padding:
+      0
+      22px
+      64px;
+  }
+
+  .trace-shrine__credit-inner {
+    width: 100%;
+
+    margin-left: 0;
+
+    padding-top: 18px;
+  }
+
+  .trace-shrine__credit-title {
+    font-size: 10px;
+  }
+
+  .trace-shrine__credit-text {
+    margin-top: 10px;
+
+    font-size: 11px;
+    line-height: 1.9;
+  }
+  /* BACK */
+
+  .trace-shrine__back {
+    padding:
+      0
+      22px
+      100px;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 520px) {
+  .trace-shrine__purpose-image,
+  .trace-shrine__ditch-main,
+  .trace-shrine__terrace-image {
+    width: 88%;
+  }
+
+  .trace-shrine .trace-shrine__buried-waste {
+    width: min(78%, 280px);
+  }
+
+  .trace-shrine__reverse-images {
+    grid-template-columns:
+      1fr
+      0.72fr;
+  }
+
+  .trace-shrine__after-detail {
+    width: 72%;
+  }
+}

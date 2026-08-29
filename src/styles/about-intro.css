@@ -1,0 +1,310 @@
+/* ========================================
+   ABOUT INTRO
+======================================== */
+
+.manoii-about-intro {
+  padding:
+    0
+    clamp(28px, 5vw, 80px)
+    140px;
+
+  background: var(--background);
+}
+
+.manoii-about-intro__inner {
+  width: 100%;
+  max-width: var(--content-width);
+
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.manoii-about-intro__image-wrap {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 3 / 1;
+
+  overflow: hidden;
+
+  background: var(--image-placeholder);
+}
+
+.manoii-about-intro__image {
+  object-fit: cover;
+  object-position: center 80%;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.manoii-about-intro__header {
+  padding:
+    62px
+    0
+    46px;
+
+  text-align: center;
+}
+
+.manoii-about-intro__heading {
+  margin: 0;
+
+  color: var(--foreground);
+
+  font-size: 24px;
+  font-weight: 500;
+
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+}
+
+
+/* ========================================
+   PEOPLE
+======================================== */
+
+.manoii-about-intro__people {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  column-gap:
+    clamp(70px, 10vw, 140px);
+
+  width: min(100%, 860px);
+
+  margin: 0 auto;
+}
+
+.manoii-about-intro__person {
+  min-width: 0;
+}
+
+.manoii-about-intro__name {
+  margin: 0;
+
+  color: var(--foreground);
+
+  font-size: 17px;
+  font-weight: 500;
+
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+}
+
+.manoii-about-intro__text {
+  margin:
+    15px
+    0
+    0;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 1.95;
+  letter-spacing: 0.02em;
+}
+
+.manoii-about-intro__roles {
+  margin:
+    18px
+    0
+    0;
+
+  color:
+    rgba(37, 40, 35, 0.62);
+
+  font-size: 11px;
+  font-weight: 400;
+
+  line-height: 1.8;
+  letter-spacing: 0.035em;
+}
+
+
+/* ========================================
+   MANOII GIRLS
+======================================== */
+
+.manoii-about-intro__girls {
+  width: min(100%, 860px);
+
+  margin:
+    58px
+    auto
+    0;
+
+  padding-top: 28px;
+
+  border-top:
+    1px solid
+    var(--line);
+
+  text-align: center;
+}
+
+.manoii-about-intro__girls-title {
+  margin: 0;
+
+  color: var(--foreground);
+
+  font-size: 15px;
+  font-weight: 500;
+
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+}
+
+.manoii-about-intro__girls-text {
+  margin:
+    10px
+    0
+    0;
+
+  color: var(--muted);
+
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+
+/* ========================================
+   MORE
+======================================== */
+
+.manoii-about-intro__more {
+  margin-top: 42px;
+
+  text-align: center;
+}
+
+.manoii-about-intro__more-link {
+  display: inline-block;
+
+  padding-bottom: 5px;
+
+  color: var(--foreground);
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+
+  text-decoration: none;
+
+  border-bottom:
+    1px solid
+    var(--line);
+
+  transition:
+    opacity 0.25s ease;
+}
+
+@media (hover: hover) {
+  .manoii-about-intro__more-link:hover {
+    opacity: 0.55;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+  .manoii-about-intro {
+    padding:
+      0
+      20px
+      100px;
+  }
+
+  .manoii-about-intro__image-wrap {
+    aspect-ratio: 16 / 7;
+  }
+
+  .manoii-about-intro__image {
+    object-position: center 70%;
+  }
+
+  .manoii-about-intro__header {
+    padding:
+      46px
+      0
+      36px;
+  }
+
+  .manoii-about-intro__heading {
+    font-size: 20px;
+
+    letter-spacing: 0.09em;
+  }
+
+  .manoii-about-intro__people {
+    grid-template-columns: 1fr;
+
+    row-gap: 42px;
+
+    width: 100%;
+  }
+
+  .manoii-about-intro__name {
+    font-size: 16px;
+  }
+
+  .manoii-about-intro__text {
+    margin-top: 11px;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+    letter-spacing: 0.01em;
+  }
+
+  .manoii-about-intro__roles {
+    margin-top: 14px;
+
+    font-size: 11px;
+
+    line-height: 1.75;
+  }
+
+  .manoii-about-intro__girls {
+    width: 100%;
+
+    margin-top: 44px;
+
+    padding-top: 24px;
+  }
+
+  .manoii-about-intro__girls-title {
+    font-size: 14px;
+  }
+
+  .manoii-about-intro__girls-text {
+    font-size: 12px;
+  }
+
+  .manoii-about-intro__more {
+    margin-top: 34px;
+  }
+
+  .manoii-about-intro__more-link {
+    font-size: 12px;
+  }
+}

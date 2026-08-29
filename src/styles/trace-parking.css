@@ -1,0 +1,691 @@
+/* ========================================
+   TRACE PARKING
+======================================== */
+
+.trace-parking {
+  overflow: hidden;
+
+  background: var(--background);
+  color: var(--foreground);
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.trace-parking__hero {
+  padding:
+    190px
+    clamp(28px, 5vw, 80px)
+    120px;
+}
+
+.trace-parking__hero-inner,
+.trace-parking__story-inner,
+.trace-parking__wide-inner,
+.trace-parking__complete-inner {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.trace-parking__hero-inner {
+  text-align: center;
+}
+
+.trace-parking__eyebrow {
+  margin: 0;
+
+  color: rgba(37, 40, 35, 0.42);
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+}
+
+.trace-parking__category {
+  margin: 14px 0 0;
+
+  color: var(--muted);
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+}
+
+.trace-parking__heading {
+  margin: 18px 0 0;
+
+  font-size: clamp(30px, 3.4vw, 44px);
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.09em;
+}
+
+.trace-parking__intro {
+  margin: 34px auto 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 2.1;
+  letter-spacing: 0.03em;
+}
+
+
+/* ========================================
+   COMMON STORY
+======================================== */
+
+.trace-parking__story {
+  padding:
+    130px
+    clamp(28px, 5vw, 80px);
+}
+
+.trace-parking__story-inner {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.08fr)
+    minmax(320px, 0.78fr);
+
+  gap: clamp(64px, 8vw, 120px);
+
+  align-items: start;
+}
+
+.trace-parking__wide-inner {
+  display: flex;
+  flex-direction: column;
+
+  gap: clamp(50px, 7vw, 90px);
+}
+
+.trace-parking__copy {
+  min-width: 0;
+}
+
+.trace-parking__section-copy {
+  width: min(100%, 560px);
+}
+
+.trace-parking__step {
+  margin: 0 0 14px;
+
+  color: rgba(37, 40, 35, 0.36);
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+}
+
+.trace-parking__title {
+  margin: 0;
+
+  font-size: clamp(26px, 2.8vw, 36px);
+  font-weight: 500;
+
+  line-height: 1.6;
+  letter-spacing: 0.07em;
+}
+
+.trace-parking__body {
+  margin-top: 28px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 2.05;
+  letter-spacing: 0.02em;
+}
+
+.trace-parking__body p {
+  margin: 0;
+}
+
+.trace-parking__body p + p {
+  margin-top: 18px;
+}
+
+
+/* ========================================
+   IMAGES
+======================================== */
+
+.trace-parking figure {
+  margin: 0;
+}
+
+.trace-parking__image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+
+/* ========================================
+   BEFORE
+======================================== */
+
+.trace-parking__story--before {
+  background: var(--surface);
+}
+
+.trace-parking__story--before
+  .trace-parking__wide-inner {
+  gap: 0;
+}
+
+.trace-parking__story--before .trace-parking__before-image {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.trace-parking__before-copy {
+  width: min(100%, 560px);
+  margin-top: 24px;
+}
+
+.trace-parking__before-copy .trace-parking__body {
+  margin-top: 0;
+}
+
+/* ========================================
+   SKETCH
+======================================== */
+
+.trace-parking__story--sketch {
+  background: var(--background);
+}
+
+.trace-parking__sketch-image {
+  justify-self: end;
+
+  width: min(100%, 520px);
+
+  padding: 18px;
+
+  background: white;
+}
+
+/* ========================================
+   DIG
+======================================== */
+
+.trace-parking__story--dig {
+  background: #e9e5dc;
+}
+
+.trace-parking__digging-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 70%;
+  margin-left: auto;
+  gap: clamp(18px, 2.8vw, 36px);
+
+  align-items: start;
+}
+
+.trace-parking__voice {
+  margin: 0;
+
+  color: var(--foreground);
+
+  font-size: 15px;
+  font-weight: 500;
+
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+}
+
+/* ========================================
+   WATER PATH
+======================================== */
+
+.trace-parking__story--water {
+  background: var(--background);
+}
+
+.trace-parking__pair--offset {
+  align-items: start;
+}
+
+.trace-parking__pair--offset figure:first-child {
+  margin-top: clamp(40px, 6vw, 90px);
+}
+
+.trace-parking__story--water {
+  background: var(--background);
+}
+
+.trace-parking__water-image {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ========================================
+   REUSE
+======================================== */
+
+.trace-parking__story--reuse {
+  background: var(--surface);
+}
+
+.trace-parking__reuse-image {
+  min-width: 0;
+}
+
+
+/* ========================================
+   STONE
+======================================== */
+
+.trace-parking__story--stone {
+  background: #e9e5dc;
+}
+
+.trace-parking__stone-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  width: 85%;
+  margin-left: auto ;
+
+  gap: clamp(18px, 2.8vw, 36px);
+
+  align-items: start;
+}
+
+
+/* ========================================
+   HAMMER
+======================================== */
+
+.trace-parking__story--hammer {
+  background: var(--background);
+}
+
+.trace-parking__hammer-image {
+  justify-self: end;
+
+  width: min(100%, 520px);
+}
+
+
+/* ========================================
+   TEAM
+======================================== */
+
+.trace-parking__story--team {
+  background: #dfe2d7;
+}
+
+.trace-parking__team-heading {
+  width: min(100%, 560px);
+}
+
+.trace-parking__team-main {
+  width: 100%;
+}
+
+.trace-parking__team-copy {
+  width: min(100%, 520px);
+
+  margin-left: 0;
+}
+
+
+/* ========================================
+   EVERYONE
+======================================== */
+
+.trace-parking__story--everyone {
+  background: var(--surface);
+}
+
+.trace-parking__everyone-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  width: 100%;
+  margin-left: auto;
+
+  gap: clamp(18px, 2.8vw, 36px);
+
+  align-items: start;
+}
+
+/* ========================================
+   COMPLETE
+======================================== */
+
+.trace-parking__complete {
+  padding:
+    150px
+    clamp(28px, 5vw, 80px)
+    160px;
+
+  background: var(--background);
+}
+
+.trace-parking__complete-inner {
+  display: flex;
+  flex-direction: column;
+
+  gap: clamp(54px, 7vw, 94px);
+}
+
+.trace-parking__complete-heading {
+  width: min(100%, 620px);
+}
+
+.trace-parking__complete-main {
+  width: 100%;
+}
+
+.trace-parking__complete-bottom {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.08fr)
+    minmax(300px, 0.72fr);
+
+  gap: clamp(60px, 8vw, 120px);
+
+  align-items: start;
+}
+
+.trace-parking__complete-copy {
+  min-width: 0;
+}
+
+
+/* ========================================
+   BACK
+======================================== */
+
+.trace-parking__back {
+  padding:
+    0
+    clamp(28px, 5vw, 80px)
+    140px;
+
+  background: var(--background);
+
+  text-align: center;
+}
+
+.trace-parking__back-link {
+  display: inline-flex;
+
+  align-items: center;
+  gap: 20px;
+
+  padding-bottom: 7px;
+
+  border-bottom: 1px solid rgba(37, 40, 35, 0.35);
+
+  color: var(--foreground);
+
+  font-size: 12px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.07em;
+
+  text-decoration: none;
+
+  transition: opacity 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .trace-parking__back-link:hover {
+    opacity: 0.55;
+  }
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+  .trace-parking__story-inner {
+    gap: 54px;
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(280px, 0.8fr);
+  }
+
+  .trace-parking__complete-bottom {
+    gap: 54px;
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(280px, 0.8fr);
+  }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+  .trace-parking__hero {
+    padding:
+      138px
+      22px
+      78px;
+  }
+
+  .trace-parking__heading {
+    margin-top: 16px;
+
+    font-size: 29px;
+  }
+
+  .trace-parking__intro {
+    margin-top: 28px;
+
+    font-size: 13px;
+
+    line-height: 1.95;
+  }
+
+
+  /* COMMON */
+
+  .trace-parking__story {
+    padding:
+      88px
+      22px
+      96px;
+  }
+
+  .trace-parking__story-inner {
+    display: flex;
+    flex-direction: column;
+
+    gap: 36px;
+  }
+
+  .trace-parking__wide-inner {
+    gap: 42px;
+  }
+
+  .trace-parking__section-copy {
+    width: 100%;
+  }
+
+  .trace-parking__title {
+    font-size: 27px;
+  }
+
+  .trace-parking__body {
+    margin-top: 24px;
+
+    font-size: 13px;
+
+    line-height: 1.95;
+  }
+
+
+  /* BEFORE */
+
+  .trace-parking__story--before
+    .trace-parking__before-image {
+    order: -1;
+  }
+
+
+  /* SKETCH */
+
+  .trace-parking__sketch-image {
+    width: 100%;
+
+    padding: 12px;
+  }
+
+  /* DIG */
+
+  .trace-parking__digging-images {
+    width: 100%;
+    margin: 0;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
+  /* PAIR */
+.trace-parking__stone-images {
+  width: 100%;
+  margin: 0;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+}
+  .trace-parking__pair,
+  .trace-parking__pair--offset {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .trace-parking__pair--offset figure:first-child {
+    margin-top: 0;
+  }
+
+
+  /* REUSE */
+
+  .trace-parking__story--reuse
+    .trace-parking__reuse-image {
+    order: -1;
+  }
+
+
+  /* HAMMER */
+
+  .trace-parking__hammer-image {
+    width: 100%;
+  }
+
+
+  /* TEAM */
+
+  .trace-parking__team-copy {
+    width: 100%;
+
+    margin-left: 0;
+  }
+
+
+  /* EVERYONE */
+
+  .trace-parking__triple {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+  }
+
+  .trace-parking__triple figure:nth-child(2) {
+    margin-top: 28px;
+  }
+
+  .trace-parking__triple figure:nth-child(3) {
+    grid-column: 1 / -1;
+
+    width: 70%;
+
+    margin-top: 12px;
+    margin-left: auto;
+  }
+
+
+  /* COMPLETE */
+
+  .trace-parking__complete {
+    padding:
+      100px
+      22px
+      110px;
+  }
+
+  .trace-parking__complete-inner {
+    gap: 44px;
+  }
+
+  .trace-parking__complete-bottom {
+    grid-template-columns: 1fr;
+
+    gap: 34px;
+  }
+
+
+  /* BACK */
+
+  .trace-parking__back {
+    padding:
+      0
+      22px
+      100px;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 520px) {
+  .trace-parking__triple {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .trace-parking__triple figure:nth-child(2),
+  .trace-parking__triple figure:nth-child(3) {
+    width: 100%;
+
+    margin: 0;
+
+    grid-column: auto;
+  }
+}

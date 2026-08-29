@@ -1,0 +1,171 @@
+/* ========================================
+   CONTACT INTRO
+======================================== */
+
+.manoii-contact-intro {
+  padding:
+    0
+    clamp(28px, 5vw, 80px)
+    0;
+
+  background: var(--surface);
+}
+
+.manoii-contact-intro__inner {
+  width: 100%;
+  max-width: var(--content-width);
+
+  margin: 0 auto;
+
+  padding:
+    84px
+    40px
+    88px;
+
+  text-align: center;
+}
+
+
+/* ========================================
+   HEADING
+======================================== */
+
+.manoii-contact-intro__heading {
+  margin: 0;
+
+  color: var(--foreground);
+
+  font-size: 24px;
+  font-weight: 500;
+
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+}
+
+
+/* ========================================
+   TEXT
+======================================== */
+
+.manoii-contact-intro__text {
+  margin-top: 34px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 1.95;
+  letter-spacing: 0.025em;
+}
+
+.manoii-contact-intro__text p {
+  margin: 0;
+}
+
+.manoii-contact-intro__text p + p {
+  margin-top: 18px;
+}
+
+
+/* ========================================
+   ACTION
+======================================== */
+
+.manoii-contact-intro__action {
+  margin-top: 42px;
+}
+
+.manoii-contact-intro__link {
+  display: inline-block;
+
+  padding:
+    12px
+    20px
+    10px;
+
+  color: var(--foreground);
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+
+  text-decoration: none;
+
+  border:
+    1px solid
+    var(--line);
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+@media (hover: hover) {
+  .manoii-contact-intro__link:hover {
+    background:
+      rgba(37, 40, 35, 0.04);
+
+    border-color:
+      rgba(37, 40, 35, 0.3);
+  }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+  .manoii-contact-intro {
+    padding:
+      0
+      20px
+      0;
+  }
+
+  .manoii-contact-intro__inner {
+    padding:
+      62px
+      10px
+      66px;
+  }
+
+  .manoii-contact-intro__heading {
+    font-size: 20px;
+
+    letter-spacing: 0.09em;
+  }
+
+  .manoii-contact-intro__text {
+    margin-top: 28px;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+    letter-spacing: 0.015em;
+  }
+
+  .manoii-contact-intro__text p + p {
+    margin-top: 16px;
+  }
+
+  .manoii-contact-intro__desktop-break {
+    display: none;
+  }
+
+  .manoii-contact-intro__action {
+    margin-top: 34px;
+  }
+
+  .manoii-contact-intro__link {
+    padding:
+      11px
+      18px
+      9px;
+
+    font-size: 12px;
+  }
+}

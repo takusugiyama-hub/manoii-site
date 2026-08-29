@@ -1,0 +1,724 @@
+/* ========================================
+   SERVICES PAGE
+======================================== */
+
+.ground-page {
+  overflow: hidden;
+  background: var(--background);
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.ground-page__hero {
+  padding:
+    190px
+    clamp(28px, 5vw, 80px)
+    110px;
+}
+
+.ground-page__hero-inner,
+.ground-page__chapter-inner,
+.ground-page__attitude-inner,
+.ground-page__contact-inner {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.ground-page__hero-inner {
+  text-align: center;
+}
+
+.ground-page__eyebrow,
+.ground-page__contact-small {
+  margin: 0;
+  color: rgba(37, 40, 35, 0.48);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+}
+
+.ground-page__heading {
+  margin: 18px 0 0;
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.11em;
+}
+
+.ground-page__intro {
+  margin: 30px auto 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.1;
+  letter-spacing: 0.035em;
+}
+
+
+/* ========================================
+   CHAPTERS
+======================================== */
+
+.ground-page__chapter {
+  padding:
+    130px
+    clamp(28px, 5vw, 80px);
+}
+
+.ground-page__chapter--land {
+  background: var(--surface);
+}
+
+.ground-page__chapter--garden {
+  background: var(--background);
+}
+
+.ground-page__chapter--house {
+  background: #e9e5dc;
+}
+
+.ground-page__chapter-inner {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(320px, 0.78fr);
+  column-gap: clamp(70px, 9vw, 140px);
+  row-gap: 70px;
+  align-items: center;
+}
+
+
+/* ========================================
+   COPY
+======================================== */
+
+.ground-page__copy {
+  min-width: 0;
+}
+
+.ground-page__number {
+  margin: 0 0 14px;
+  color: rgba(37, 40, 35, 0.38);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+}
+
+.ground-page__title {
+  margin: 0;
+  font-size: clamp(26px, 2.7vw, 36px);
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: 0.08em;
+}
+
+.ground-page__lead {
+  margin: 24px 0 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.9;
+  letter-spacing: 0.035em;
+}
+
+.ground-page__body {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 2.05;
+  letter-spacing: 0.02em;
+}
+
+.ground-page__body p {
+  margin: 0;
+}
+
+.ground-page__body p + p {
+  margin-top: 16px;
+}
+
+
+/* ========================================
+   EXAMPLE LIST
+======================================== */
+
+.ground-page__examples {
+  margin: 34px 0 0;
+  padding: 22px 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 20px;
+  row-gap: 9px;
+}
+
+.ground-page__examples li {
+  position: relative;
+  padding-left: 13px;
+  color: var(--foreground);
+  font-size: 11px;
+  line-height: 1.7;
+  letter-spacing: 0.025em;
+}
+
+.ground-page__examples li::before {
+  content: "";
+  position: absolute;
+  top: 0.83em;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(37, 40, 35, 0.34);
+}
+
+
+/* ========================================
+   LAND & WATER
+======================================== */
+
+.ground-page__land-inner {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(48px, 6vw, 72px);
+  align-items: stretch;
+}
+
+.ground-page__land-intro {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 1.1fr);
+  gap: clamp(60px, 8vw, 120px);
+  align-items: stretch;
+}
+
+.ground-page__land-main {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.ground-page__land-main-image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 0%;
+}
+
+
+/* ----------------------------------------
+   LAND GALLERY
+---------------------------------------- */
+
+.ground-page__land-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(18px, 2.3vw, 30px);
+  padding-top: clamp(30px, 4vw, 44px);
+  border-top: 1px solid var(--line);
+}
+
+.ground-page__land-gallery-item {
+  min-width: 0;
+  margin: 0;
+}
+
+.ground-page__land-gallery-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.ground-page__land-gallery-item figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.ground-page__land-gallery-item figcaption strong {
+  color: var(--foreground);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.025em;
+}
+
+.ground-page__land-gallery-item figcaption span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+
+/* ========================================
+   GARDEN
+======================================== */
+
+.ground-page__garden-inner {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(40px, 6vw, 80px);
+}
+
+.ground-page__garden-intro {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(0, 0.9fr);
+  gap: clamp(48px, 7vw, 100px);
+  align-items: center;
+}
+
+.ground-page__garden-main {
+  margin: 0;
+  min-width: 0;
+}
+
+.ground-page__garden-illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* ----------------------------------------
+   GARDEN GALLERY
+---------------------------------------- */
+
+.ground-page__garden-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(18px, 2.5vw, 32px);
+  padding-top: clamp(28px, 4vw, 48px);
+  border-top: 1px solid var(--line);
+}
+
+.ground-page__garden-gallery-item {
+  min-width: 0;
+  margin: 0;
+}
+
+.ground-page__garden-gallery-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.ground-page__garden-gallery-item figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.ground-page__garden-gallery-item figcaption strong {
+  color: var(--foreground);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.025em;
+}
+
+.ground-page__garden-gallery-item figcaption span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+
+/* ========================================
+   HOUSE
+======================================== */
+
+.ground-page__visual--house {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.ground-page__house-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* ========================================
+   ATTITUDE
+======================================== */
+
+.ground-page__attitude {
+  padding:
+    145px
+    clamp(28px, 5vw, 80px)
+    155px;
+  background: #dfe2d7;
+}
+
+.ground-page__attitude-inner {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 0.86fr)
+    minmax(360px, 0.9fr);
+  gap: clamp(70px, 10vw, 150px);
+  align-items: center;
+}
+
+.ground-page__attitude-title {
+  max-width: 12em;
+  margin: 18px 0 0;
+  font-size: clamp(26px, 2.8vw, 36px);
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.07em;
+}
+
+.ground-page__attitude-body {
+  max-width: 38em;
+  margin-top: 34px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 2.1;
+  letter-spacing: 0.025em;
+}
+
+.ground-page__attitude-body p {
+  margin: 0;
+}
+
+.ground-page__attitude-body p + p {
+  margin-top: 18px;
+}
+
+.ground-page__tea {
+  text-align: center;
+}
+
+.ground-page__tea-image {
+  display: block;
+  width: min(100%, 560px);
+  height: auto;
+  margin: 0 auto;
+}
+
+.ground-page__tea-note {
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.9;
+  letter-spacing: 0.025em;
+}
+
+
+/* ========================================
+   CONTACT
+======================================== */
+
+.ground-page__contact {
+  padding:
+    135px
+    clamp(28px, 5vw, 80px)
+    145px;
+  background: var(--background);
+}
+
+.ground-page__contact-inner {
+  text-align: center;
+}
+
+.ground-page__contact-title {
+  margin: 18px 0 0;
+  font-size: clamp(24px, 2.6vw, 34px);
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.075em;
+}
+
+.ground-page__contact-text {
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.025em;
+}
+
+.ground-page__contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 42px;
+  padding: 0 0 7px;
+  border-bottom: 1px solid rgba(37, 40, 35, 0.4);
+  color: var(--foreground);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  transition: opacity 180ms ease;
+}
+
+@media (hover: hover) {
+  .ground-page__contact-link:hover {
+    opacity: 0.55;
+  }
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+  .ground-page__land-intro {
+    gap: 50px;
+  }
+
+  .ground-page__land-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 34px 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .ground-page__garden-intro {
+    gap: 48px;
+  }
+
+  .ground-page__garden-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 20px;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+  .ground-page__hero {
+    padding:
+      138px
+      22px
+      72px;
+  }
+
+  .ground-page__heading {
+    margin-top: 14px;
+    font-size: 27px;
+  }
+
+  .ground-page__intro {
+    margin-top: 22px;
+    font-size: 13px;
+    line-height: 1.95;
+  }
+
+  .ground-page__chapter {
+    padding:
+      84px
+      22px
+      94px;
+  }
+
+  .ground-page__chapter-inner {
+    grid-template-columns: 1fr;
+    row-gap: 46px;
+  }
+
+  .ground-page__title {
+    font-size: 27px;
+  }
+
+  .ground-page__lead {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.85;
+  }
+
+  .ground-page__body {
+    margin-top: 24px;
+    font-size: 13px;
+    line-height: 1.95;
+  }
+
+  .ground-page__examples {
+    grid-template-columns: 1fr;
+    margin-top: 28px;
+    padding-top: 19px;
+    row-gap: 8px;
+  }
+
+
+  /* ----------------------------------------
+     LAND & WATER
+  ---------------------------------------- */
+
+  .ground-page__land-inner {
+    display: flex;
+    gap: 40px;
+  }
+
+  .ground-page__land-intro {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .ground-page__land-main {
+    order: -1;
+    position: relative;
+    aspect-ratio: 4 / 3;
+  }
+
+  .ground-page__land-main-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ground-page__land-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 14px;
+    padding-top: 30px;
+  }
+
+  .ground-page__land-gallery-item figcaption {
+    gap: 4px;
+    margin-top: 9px;
+  }
+
+  .ground-page__land-gallery-item figcaption strong {
+    font-size: 10.5px;
+  }
+
+  .ground-page__land-gallery-item figcaption span {
+    font-size: 9.5px;
+    line-height: 1.75;
+  }
+
+
+  /* ----------------------------------------
+     HOUSE
+  ---------------------------------------- */
+
+  .ground-page__visual--house {
+    align-self: auto;
+  }
+
+
+  /* ----------------------------------------
+     ATTITUDE
+  ---------------------------------------- */
+
+  .ground-page__attitude {
+    padding:
+      92px
+      22px
+      100px;
+  }
+
+  .ground-page__attitude-inner {
+    grid-template-columns: 1fr;
+    gap: 54px;
+  }
+
+  .ground-page__attitude-title {
+    font-size: 26px;
+  }
+
+  .ground-page__attitude-body {
+    margin-top: 28px;
+    font-size: 13px;
+    line-height: 1.98;
+  }
+
+  .ground-page__tea-image {
+    width: min(92%, 470px);
+  }
+
+
+  /* ----------------------------------------
+     CONTACT
+  ---------------------------------------- */
+
+  .ground-page__contact {
+    padding:
+      92px
+      22px
+      100px;
+  }
+
+  .ground-page__contact-title {
+    font-size: 24px;
+  }
+
+  .ground-page__contact-text {
+    font-size: 13px;
+    line-height: 1.95;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE / GARDEN
+======================================== */
+
+@media (max-width: 760px) {
+  .ground-page__garden-inner {
+    gap: 40px;
+  }
+
+  .ground-page__garden-intro {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .ground-page__garden-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 14px;
+    padding-top: 32px;
+  }
+
+  .ground-page__garden-gallery-item figcaption {
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .ground-page__garden-gallery-item figcaption strong {
+    font-size: 10.5px;
+  }
+
+  .ground-page__garden-gallery-item figcaption span {
+    font-size: 9.5px;
+    line-height: 1.75;
+  }
+}

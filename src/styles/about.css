@@ -1,0 +1,576 @@
+/* ========================================
+   ABOUT
+======================================== */
+
+.about {
+  overflow: hidden;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.about__hero-inner,
+.about__wide,
+.about__story,
+.about__kankankodo-inner,
+.about__section-title,
+.about__name-inner {
+  width: min(var(--content-width), calc(100% - 96px));
+  margin-inline: auto;
+}
+
+.about__eyebrow {
+  margin: 0;
+  color: rgba(37, 40, 35, 0.48);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+}
+
+.about__eyebrow--light {
+  color: rgba(247, 245, 240, 0.72);
+}
+
+.about__copy {
+  max-width: 500px;
+  font-size: 15px;
+  line-height: 2.15;
+}
+
+.about__copy p,
+.about__kankankodo-copy p {
+  margin: 0 0 2em;
+}
+
+.about__copy p:last-child {
+  margin-bottom: 0;
+}
+
+/* HERO */
+
+.about__hero {
+  padding: 190px clamp(28px, 5vw, 80px) 110px;
+}
+
+.about__hero-inner {
+  width: 100%;
+  max-width: var(--content-width);
+  text-align: center;
+}
+
+.about__heading {
+  margin: 18px 0 0;
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.11em;
+}
+
+.about__intro {
+  margin: 30px auto 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 2.1;
+  letter-spacing: 0.035em;
+}
+
+/* SECTIONS */
+
+.about__section {
+  padding: 0 0 190px;
+}
+
+.about__section--soft {
+  padding: 160px 0;
+  background: var(--surface);
+}
+
+.about__section--work {
+  padding-top: 170px;
+}
+
+.about__story {
+  display: grid;
+  grid-template-columns: minmax(0, 500px) minmax(320px, 1fr);
+  gap: clamp(90px, 12vw, 180px);
+  align-items: start;
+}
+
+.about__story--right {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 110px;
+}
+
+.about__section-title {
+  margin-bottom: 85px;
+}
+
+.about__wide--home {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 120px;
+}
+
+.about__wide--work {
+  margin-top: 150px;
+}
+
+/* PHOTOS */
+
+.about__photo {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  background: #deddd6;
+}
+
+.about__photo img {
+  object-fit: cover;
+}
+
+.about__photo--landscape {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+}
+
+.about__photo--home {
+  width: min(76%, 900px);
+  aspect-ratio: 16 / 9;
+}
+
+/* NATURE PHOTO STORY */
+
+.about__photo-stack {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.about__photo--nature-main {
+  grid-column: 1 / -1;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+.about__photo--nature-morel {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+}
+
+.about__photo--nature-fish {
+  width: 100%;
+  margin-top: 70px;
+  aspect-ratio: 4 / 3;
+}
+
+.about__photo--nature-deer {
+  grid-column: 1 / -1;
+  width: 78%;
+  margin: 36px 0 0 auto;
+  aspect-ratio: 16 / 10;
+}
+
+/* KANKANKODO */
+
+.about__kankankodo {
+  padding: 180px 0 200px;
+  background: #252720;
+  color: #f7f5f0;
+}
+
+.about__kankankodo-inner {
+  max-width: 1040px;
+}
+
+.about__kankankodo-copy {
+  width: min(590px, 100%);
+  margin-top: 70px;
+  font-size: 15px;
+  line-height: 2.2;
+}
+
+.about__kankankodo-break,
+.about__kankankodo-end {
+  margin-top: 90px;
+}
+
+.about__four-words {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 34px;
+  width: min(760px, 100%);
+  margin-top: 100px;
+  padding: 46px 0;
+}
+
+.about__four-word {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.about__four-kanji {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+}
+
+.about__four-title {
+  color: rgba(247, 245, 240, 0.65);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+
+.about__kankankodo-photos {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.42fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: end;
+  margin-top: 120px;
+}
+
+.about__photo--kankankodo-main {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+}
+
+.about__photo--kankankodo-detail {
+  width: 100%;
+  margin-bottom: 12%;
+  aspect-ratio: 1;
+}
+
+/* WORK */
+
+.about__work-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 68px;
+  align-items: flex-end;
+}
+
+.about__photo--water {
+  width: 82%;
+  margin-right: auto;
+  aspect-ratio: 4 / 3;
+}
+
+.about__photo--repair {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+/* PEOPLE */
+
+.about__people {
+  padding: 180px 0 190px;
+}
+
+.about__people-inner {
+  width: min(var(--content-width), calc(100% - 96px));
+  margin-inline: auto;
+}
+
+.about__people-title {
+  width: 100%;
+  margin-bottom: 85px;
+}
+
+.about__people-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(70px, 10vw, 150px);
+}
+
+.about__person-name,
+.about__girls-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+}
+
+.about__person-text {
+  margin: 30px 0 0;
+  font-size: 14px;
+  line-height: 2.15;
+}
+
+.about__person-roles {
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.9;
+  letter-spacing: 0.045em;
+}
+
+.about__girls {
+  width: min(540px, 100%);
+  margin: 110px auto 0;
+  padding-top: 42px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+.about__girls-text {
+  margin: 24px 0 0;
+  font-size: 14px;
+  line-height: 2.1;
+}
+
+.about__girls-link {
+  display: inline-flex;
+  gap: 0.55em;
+  align-items: center;
+  margin-top: 30px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid currentColor;
+  color: inherit;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.055em;
+  text-decoration: none;
+  transition: opacity 180ms ease;
+}
+
+.about__girls-link:hover {
+  opacity: 0.58;
+}
+
+.about__girls-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+}
+
+/* NAME */
+
+.about__name {
+  padding: 180px 0 210px;
+  background: var(--surface);
+}
+
+.about__name-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 520px) minmax(320px, 1fr);
+  gap: clamp(90px, 12vw, 180px);
+  align-items: start;
+}
+
+.about__photo--book {
+  width: min(100%, 520px);
+  aspect-ratio: 4 / 3;
+  justify-self: end;
+}
+
+.about__name-question {
+  margin-top: 75px;
+}
+
+.about__closing {
+  margin-top: 75px !important;
+  font-size: 17px;
+  line-height: 2.15;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+  .about__hero-inner,
+  .about__wide,
+  .about__story,
+  .about__kankankodo-inner,
+  .about__section-title,
+  .about__name-inner {
+    width: calc(100% - 44px);
+  }
+
+  .about__hero {
+    padding: 138px 22px 72px;
+  }
+
+  .about__heading {
+    margin-top: 14px;
+    font-size: 27px;
+  }
+
+  .about__intro {
+    margin-top: 22px;
+    font-size: 12px;
+    line-height: 1.95;
+  }
+
+  .about__section {
+    padding-bottom: 110px;
+  }
+
+  .about__section--soft {
+    padding: 100px 0;
+  }
+
+  .about__section--work {
+    padding-top: 105px;
+  }
+
+  .about__story,
+  .about__name-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+  }
+
+  .about__story--right {
+    margin-top: 65px;
+  }
+
+  .about__copy,
+  .about__kankankodo-copy {
+    font-size: 13px;
+    line-height: 2.05;
+  }
+
+  .about__section-title {
+    margin-bottom: 55px;
+  }
+
+  .about__photo--landscape {
+    aspect-ratio: 4 / 3;
+  }
+
+  .about__wide--home {
+    margin-top: 70px;
+  }
+
+  .about__photo--home {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .about__photo-stack {
+    gap: 16px;
+  }
+
+  .about__photo--nature-fish {
+    margin-top: 42px;
+  }
+
+  .about__photo--nature-deer {
+    width: 86%;
+    margin-top: 22px;
+  }
+
+  .about__kankankodo {
+    padding: 115px 0 125px;
+  }
+
+  .about__kankankodo-copy {
+    margin-top: 50px;
+  }
+
+  .about__kankankodo-break,
+  .about__kankankodo-end {
+    margin-top: 65px;
+  }
+
+  .about__four-words {
+    grid-template-columns: 1fr 1fr;
+    gap: 44px 28px;
+    margin-top: 70px;
+    padding: 38px 0;
+  }
+
+  .about__four-kanji {
+    font-size: 56px;
+  }
+
+  .about__kankankodo-photos {
+    grid-template-columns: 1fr 0.48fr;
+    gap: 18px;
+    margin-top: 75px;
+  }
+
+  .about__work-photos {
+    gap: 30px;
+  }
+
+  .about__photo--water {
+    width: 78%;
+  }
+
+  .about__wide--work {
+    margin-top: 90px;
+  }
+
+  .about__name {
+    padding: 110px 0 130px;
+  }
+
+  .about__people {
+    padding: 105px 0 115px;
+  }
+
+  .about__people-inner {
+    width: calc(100% - 44px);
+  }
+
+  .about__people-title {
+    margin-bottom: 55px;
+  }
+
+  .about__people-grid {
+    grid-template-columns: 1fr;
+    gap: 62px;
+  }
+
+  .about__person-name,
+  .about__girls-title {
+    font-size: 15px;
+  }
+
+  .about__person-text {
+    margin-top: 24px;
+    font-size: 13px;
+    line-height: 2.05;
+  }
+
+  .about__person-text br {
+    display: none;
+  }
+
+  .about__person-roles {
+    margin-top: 22px;
+    font-size: 10px;
+  }
+
+  .about__girls {
+    margin-top: 72px;
+    padding-top: 34px;
+  }
+
+  .about__girls-text {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+
+  .about__girls-link {
+    margin-top: 25px;
+    font-size: 11px;
+  }
+
+  .about__photo--book {
+    width: 100%;
+    order: -1;
+  }
+
+  .about__name-question {
+    margin-top: 55px;
+  }
+
+  .about__closing {
+    margin-top: 55px !important;
+    font-size: 15px;
+  }
+}

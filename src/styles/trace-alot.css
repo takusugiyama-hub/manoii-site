@@ -1,0 +1,779 @@
+/* ========================================
+   TRACE A LOT
+======================================== */
+
+.trace-alot {
+  overflow: hidden;
+
+  background: var(--background);
+  color: var(--foreground);
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.trace-alot__hero {
+  padding:
+    190px
+    clamp(28px, 5vw, 80px)
+    120px;
+}
+
+.trace-alot__hero-inner,
+.trace-alot__story-inner,
+.trace-alot__wide-inner,
+.trace-alot__complete-inner,
+.trace-alot__later-inner {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.trace-alot__hero-inner {
+  text-align: center;
+}
+
+.trace-alot__eyebrow {
+  margin: 0;
+
+  color: rgba(37, 40, 35, 0.42);
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+}
+
+.trace-alot__category {
+  margin: 14px 0 0;
+
+  color: var(--muted);
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+}
+
+.trace-alot__heading {
+  margin: 18px 0 0;
+
+  font-size: clamp(30px, 3.4vw, 44px);
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.09em;
+}
+
+.trace-alot__intro {
+  margin: 34px auto 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 2.1;
+  letter-spacing: 0.03em;
+}
+
+.trace-alot__date {
+  margin: 22px 0 0;
+
+  color: rgba(37, 40, 35, 0.42);
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+}
+
+
+/* ========================================
+   COMMON STORY
+======================================== */
+
+.trace-alot__story {
+  padding:
+    130px
+    clamp(28px, 5vw, 80px);
+}
+
+.trace-alot__story-inner {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.08fr)
+    minmax(320px, 0.78fr);
+
+  gap: clamp(64px, 8vw, 120px);
+
+  align-items: start;
+}
+
+.trace-alot__wide-inner {
+  display: flex;
+  flex-direction: column;
+
+  gap: clamp(50px, 7vw, 90px);
+}
+
+.trace-alot__copy {
+  min-width: 0;
+}
+
+.trace-alot__section-copy {
+  width: min(100%, 560px);
+}
+
+.trace-alot__step {
+  margin: 0 0 14px;
+
+  color: rgba(37, 40, 35, 0.36);
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+}
+
+.trace-alot__title {
+  margin: 0;
+
+  font-size: clamp(26px, 2.8vw, 36px);
+  font-weight: 500;
+
+  line-height: 1.6;
+  letter-spacing: 0.07em;
+}
+
+.trace-alot__body {
+  margin-top: 28px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 2.05;
+  letter-spacing: 0.02em;
+}
+
+.trace-alot__body p {
+  margin: 0;
+}
+
+.trace-alot__body p + p {
+  margin-top: 18px;
+}
+
+
+/* ========================================
+   IMAGES
+======================================== */
+
+.trace-alot figure {
+  margin: 0;
+}
+
+.trace-alot__image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+
+/* ========================================
+   01 BEFORE
+======================================== */
+
+.trace-alot__story--before {
+  background: var(--surface);
+}
+
+.trace-alot__story--before
+  .trace-alot__wide-inner {
+  gap: 0;
+}
+
+.trace-alot__story--before
+  .trace-alot__wide-inner
+  .trace-alot__before-image {
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* ========================================
+   02 DRAINAGE
+======================================== */
+
+.trace-alot__story--drainage {
+  background: var(--background);
+}
+
+.trace-alot__drainage-images {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  width: 85%;
+  margin-left: auto;
+
+  gap: clamp(18px, 2.8vw, 36px);
+
+  align-items: start;
+}
+
+
+/* ========================================
+   03 APPROACH
+======================================== */
+
+.trace-alot__story--approach {
+  background: #e9e5dc;
+}
+
+.trace-alot__approach-images {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  width: 100%;
+
+  gap: clamp(14px, 2vw, 28px);
+
+  align-items: start;
+}
+
+/* ========================================
+   04 PARKING
+======================================== */
+
+.trace-alot__story--parking {
+  background: var(--background);
+}
+
+.trace-alot__parking-image {
+  justify-self: end;
+
+  width: min(100%, 520px);
+}
+
+.trace-alot__related-link {
+  display: inline-flex;
+
+  align-items: center;
+  gap: 22px;
+
+  margin-top: 34px;
+  padding-bottom: 6px;
+
+  border-bottom:
+    1px solid rgba(37, 40, 35, 0.35);
+
+  color: var(--foreground);
+
+  font-size: 12px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+
+  text-decoration: none;
+
+  transition: opacity 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .trace-alot__related-link:hover {
+    opacity: 0.55;
+  }
+}
+
+
+/* ========================================
+   05 FOREST SOIL
+======================================== */
+
+.trace-alot__story--soil {
+  background: var(--surface);
+}
+
+.trace-alot__soil-images {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  width: 85%;
+  margin-left: auto;
+
+  gap: clamp(18px, 2.8vw, 36px);
+
+  align-items: start;
+}
+
+.trace-alot__soil-images--second {
+  margin-top:
+    calc(
+      clamp(18px, 2.8vw, 36px)
+      * -1
+    );
+}
+
+
+/* ========================================
+   06 CONCRETE
+======================================== */
+
+.trace-alot__story--concrete {
+  background: #e9e5dc;
+}
+
+.trace-alot__concrete-images {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  width: 85%;
+  margin-left: auto;
+
+  gap: clamp(18px, 2.8vw, 36px);
+
+  align-items: start;
+}
+
+
+/* ========================================
+   07 PLANTING
+======================================== */
+
+.trace-alot__story--planting {
+  background: var(--background);
+}
+
+.trace-alot__planting-image {
+  justify-self: end;
+
+  width: min(100%, 520px);
+}
+
+
+/* ========================================
+   SYMBOL TREE
+======================================== */
+
+.trace-alot__story--tree {
+  background: #dfe2d7;
+}
+
+.trace-alot__tree-image {
+  width: min(100%, 520px);
+}
+
+
+/* ========================================
+   COMPLETE
+======================================== */
+
+.trace-alot__complete {
+  padding:
+    150px
+    clamp(28px, 5vw, 80px)
+    160px;
+
+  background: var(--surface);
+}
+
+.trace-alot__complete-inner {
+  display: flex;
+  flex-direction: column;
+
+  gap: clamp(54px, 7vw, 94px);
+}
+
+.trace-alot__complete-heading {
+  width: min(100%, 620px);
+}
+
+.trace-alot__complete-image {
+  width: 100%;
+}
+
+
+/* ========================================
+   CREDIT
+======================================== */
+
+.trace-alot__credit {
+  width: min(100%, 620px);
+
+  margin-left: auto;
+
+  padding-top: 28px;
+
+  border-top:
+    1px solid rgba(37, 40, 35, 0.14);
+}
+
+.trace-alot__credit-title {
+  margin: 0;
+
+  color: var(--foreground);
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+}
+
+.trace-alot__credit-text {
+  margin: 14px 0 0;
+
+  color: var(--muted);
+
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+
+/* ========================================
+   08 LATER
+======================================== */
+
+.trace-alot__later {
+  padding:
+    150px
+    clamp(28px, 5vw, 80px)
+    160px;
+
+  background: var(--background);
+}
+
+.trace-alot__later-inner {
+  display: flex;
+  flex-direction: column;
+
+  gap: clamp(54px, 7vw, 94px);
+}
+
+.trace-alot__later-heading {
+  width: min(100%, 620px);
+}
+
+.trace-alot__later-image {
+  width: 100%;
+}
+
+.trace-alot__later-copy {
+  width: min(100%, 560px);
+
+  margin-left: auto;
+}
+
+.trace-alot__later-copy
+  .trace-alot__body {
+  margin-top: 0;
+}
+
+/* ========================================
+   CREDIT
+======================================== */
+
+.trace-shrine__credit {
+  padding:
+    0
+    clamp(28px, 5vw, 80px)
+    clamp(120px, 12vw, 170px);
+
+  background: var(--background);
+}
+
+.trace-shrine__credit-inner {
+  width: 100%;
+  max-width: var(--content-width);
+
+  margin: 0 auto;
+}
+
+.trace-shrine__credit-inner {
+  width: min(100%, 620px);
+
+  margin-left: auto;
+
+  padding-top: 28px;
+
+  border-top:
+    1px solid rgba(37, 40, 35, 0.14);
+}
+
+.trace-shrine__credit-title {
+  margin: 0;
+
+  color: var(--foreground);
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+}
+
+.trace-shrine__credit-text {
+  margin: 14px 0 0;
+
+  color: var(--muted);
+
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+/* ========================================
+   BACK
+======================================== */
+
+.trace-alot__back {
+  padding:
+    0
+    clamp(28px, 5vw, 80px)
+    140px;
+
+  background: var(--background);
+
+  text-align: center;
+}
+
+.trace-alot__back-link {
+  display: inline-flex;
+
+  align-items: center;
+  gap: 20px;
+
+  padding-bottom: 7px;
+
+  border-bottom:
+    1px solid rgba(37, 40, 35, 0.35);
+
+  color: var(--foreground);
+
+  font-size: 12px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.07em;
+
+  text-decoration: none;
+
+  transition: opacity 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .trace-alot__back-link:hover {
+    opacity: 0.55;
+  }
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+  .trace-alot__story-inner {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(280px, 0.8fr);
+
+    gap: 54px;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+  .trace-alot__hero {
+    padding:
+      138px
+      22px
+      78px;
+  }
+
+  .trace-alot__heading {
+    margin-top: 16px;
+
+    font-size: 29px;
+  }
+
+  .trace-alot__intro {
+    margin-top: 28px;
+
+    font-size: 13px;
+
+    line-height: 1.95;
+  }
+
+  .trace-alot__date {
+    margin-top: 18px;
+  }
+
+
+  /* COMMON */
+
+  .trace-alot__story {
+    padding:
+      88px
+      22px
+      96px;
+  }
+
+  .trace-alot__story-inner {
+    display: flex;
+    flex-direction: column;
+
+    gap: 36px;
+  }
+
+  .trace-alot__wide-inner {
+    gap: 42px;
+  }
+
+  .trace-alot__section-copy {
+    width: 100%;
+  }
+
+  .trace-alot__title {
+    font-size: 27px;
+  }
+
+  .trace-alot__body {
+    margin-top: 24px;
+
+    font-size: 13px;
+
+    line-height: 1.95;
+  }
+
+
+  /* 01 BEFORE */
+
+  .trace-alot__story--before
+    .trace-alot__wide-inner {
+    gap: 0;
+  }
+
+  .trace-alot__before-image {
+    margin-top: 32px;
+  }
+
+
+  /* TWO IMAGE GROUPS */
+
+  .trace-alot__drainage-images,
+  .trace-alot__approach-images,
+  .trace-alot__soil-images,
+  .trace-alot__concrete-images {
+    width: 100%;
+    margin: 0;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
+  .trace-alot__soil-images--second {
+    margin-top: -30px;
+  }
+
+
+  /* 04 PARKING */
+
+  .trace-alot__parking-image {
+    width: 100%;
+  }
+
+
+  /* 07 PLANTING */
+
+  .trace-alot__planting-image {
+    width: 100%;
+  }
+
+
+  /* SYMBOL TREE */
+
+  .trace-alot__tree-image {
+    width: 100%;
+  }
+
+
+  /* COMPLETE */
+
+  .trace-alot__complete {
+    padding:
+      100px
+      22px
+      110px;
+  }
+
+  .trace-alot__complete-inner {
+    gap: 44px;
+  }
+
+  .trace-alot__credit {
+    width: 100%;
+
+    margin-left: 0;
+
+    padding-top: 22px;
+  }
+
+
+  /* LATER */
+
+  .trace-alot__later {
+    padding:
+      100px
+      22px
+      110px;
+  }
+
+  .trace-alot__later-inner {
+    gap: 44px;
+  }
+
+  .trace-alot__later-copy {
+    width: 100%;
+
+    margin-left: 0;
+  }
+
+
+  /* BACK */
+
+  .trace-alot__back {
+    padding:
+      0
+      22px
+      100px;
+  }
+}

@@ -1,0 +1,353 @@
+/* ========================================
+   TRACE PAGE
+======================================== */
+
+.trace-page {
+  overflow: hidden;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.trace-page__hero {
+  padding:
+    190px
+    clamp(28px, 5vw, 80px)
+    110px;
+}
+
+.trace-page__hero-inner,
+.trace-page__list-inner {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.trace-page__hero-inner {
+  text-align: center;
+}
+
+.trace-page__eyebrow {
+  margin: 0;
+
+  color: rgba(37, 40, 35, 0.48);
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+}
+
+.trace-page__heading {
+  margin: 18px 0 0;
+
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.11em;
+}
+
+.trace-page__intro {
+  margin: 30px auto 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 2.1;
+  letter-spacing: 0.035em;
+}
+
+
+/* ========================================
+   TRACE LIST
+======================================== */
+
+.trace-page__list {
+  padding:
+    130px
+    clamp(28px, 5vw, 80px)
+    150px;
+
+  background: var(--surface);
+}
+
+.trace-page__list-inner {
+  display: flex;
+  flex-direction: column;
+
+  gap: clamp(110px, 13vw, 180px);
+}
+
+
+/* ========================================
+   TRACE ITEM
+======================================== */
+
+.trace-page__item {
+  margin: 0;
+}
+
+.trace-page__link {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(320px, 0.78fr);
+
+  column-gap: clamp(70px, 9vw, 140px);
+
+  align-items: start;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* 偶数番目は左右反転 */
+
+.trace-page__item:nth-child(even)
+  .trace-page__link {
+  grid-template-columns:
+    minmax(320px, 0.78fr)
+    minmax(0, 1.05fr);
+}
+
+.trace-page__item:nth-child(even)
+  .trace-page__image-wrap {
+  order: 2;
+}
+
+.trace-page__item:nth-child(even)
+  .trace-page__content {
+  order: 1;
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.trace-page__image-wrap {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 4 / 3;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  background: #e9e5dc;
+}
+
+.trace-page__image {
+  object-fit: cover;
+
+  transition:
+    transform 0.6s ease,
+    opacity 0.4s ease;
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.trace-page__content {
+  min-width: 0;
+}
+
+.trace-page__number {
+  margin: 0 0 14px;
+
+  color: rgba(37, 40, 35, 0.38);
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+}
+
+.trace-page__category {
+  margin: 0 0 10px;
+
+  color: var(--muted);
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1.7;
+  letter-spacing: 0.025em;
+}
+
+.trace-page__title {
+  margin: 0;
+
+  font-size: clamp(26px, 2.7vw, 36px);
+  font-weight: 500;
+
+  line-height: 1.55;
+  letter-spacing: 0.08em;
+}
+
+.trace-page__text {
+  max-width: 430px;
+
+  margin: 24px 0 0;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 2.05;
+  letter-spacing: 0.02em;
+}
+
+.trace-page__more {
+  display: inline-block;
+
+  margin-top: 32px;
+  padding-bottom: 6px;
+
+  border-bottom: 1px solid rgba(37, 40, 35, 0.35);
+
+  color: var(--foreground);
+
+  font-size: 12px;
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.07em;
+}
+
+
+/* ========================================
+   HOVER
+======================================== */
+
+@media (hover: hover) and (pointer: fine) {
+  .trace-page__link:hover
+    .trace-page__image {
+    transform: scale(1.015);
+  }
+
+  .trace-page__link:hover
+    .trace-page__more {
+    opacity: 0.55;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+  .trace-page__hero {
+    padding:
+      138px
+      22px
+      72px;
+  }
+
+  .trace-page__heading {
+    margin-top: 14px;
+
+    font-size: 27px;
+  }
+
+  .trace-page__intro {
+    margin-top: 22px;
+
+    font-size: 13px;
+
+    line-height: 1.95;
+  }
+
+
+  /* TRACE LIST */
+
+  .trace-page__list {
+    padding:
+      84px
+      22px
+      110px;
+  }
+
+  .trace-page__list-inner {
+    gap: 94px;
+  }
+
+
+  /* TRACE ITEM */
+
+  .trace-page__link,
+  .trace-page__item:nth-child(even)
+    .trace-page__link {
+    display: flex;
+    flex-direction: column;
+
+    gap: 34px;
+
+    align-items: stretch;
+  }
+
+  .trace-page__item:nth-child(even)
+    .trace-page__image-wrap,
+  .trace-page__item:nth-child(even)
+    .trace-page__content {
+    order: initial;
+  }
+
+
+  /* IMAGE */
+
+  .trace-page__image-wrap {
+    aspect-ratio: 4 / 3;
+  }
+
+
+  /* CONTENT */
+
+  .trace-page__number {
+    margin-bottom: 14px;
+
+    font-size: 10px;
+  }
+
+  .trace-page__category {
+    margin-bottom: 8px;
+
+    font-size: 11px;
+  }
+
+  .trace-page__title {
+    font-size: 27px;
+  }
+
+  .trace-page__text {
+    max-width: none;
+
+    margin-top: 20px;
+
+    font-size: 13px;
+
+    line-height: 1.95;
+  }
+
+  .trace-page__more {
+    margin-top: 26px;
+
+    font-size: 12px;
+  }
+}

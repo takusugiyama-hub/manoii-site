@@ -23,6 +23,14 @@ export default function RootLayout({
     <html lang="ja" data-scroll-behavior="smooth">
       <body className={zenMaruGothic.variable}>
         {children}
+
+        {/* Cloudflare Web Analytics */}
+        <script
+          type="module"
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token":"01207094704940f9b0e9182706bf5d3f"}'
+        />
+        {/* End Cloudflare Web Analytics */}
       </body>
     </html>
   );

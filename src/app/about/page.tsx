@@ -364,13 +364,7 @@ export default function AboutPage() {
               <article className="about__person">
                 <h2 className="about__person-name">すぎやまりょうこ</h2>
                 <p className="about__person-text">
-                  鳥取市出身。世界各地を旅したのち、造園の仕事へ。
-                  <br />
-                  2017年、家族で岩美町へ移住。
-                  <br />
-                  庭づくりや剪定、土地おこしなど、
-                  <br />
-                  自然と暮らしのあいだにある仕事をしています。
+                  鳥取市出身。若い頃はバックパックを背負い、世界各地を旅する。2017年、家族で岩美町へ移住。その後、鳥取市内の造園会社に2年ほど勤め、造園や外構の仕事を学ぶ。その経験のなかで環境への負荷についても考えるようになり、現在は庭づくりや剪定、土地おこしなど、自然と暮らしのあいだにある仕事をしています。
                 </p>
                 <p className="about__person-roles">
                   庭づくり / 剪定 / 土地おこし / お茶会 / イラスト
@@ -386,7 +380,9 @@ export default function AboutPage() {
                   <br />
                   「まのいいりょうし」を立ち上げる。
                   <br />
-                  内装、外構、木工など、つくる仕事全般を担当。
+                  内装、外構、木工など、つくる仕事全般を担当。<br />
+                  風博士として音楽活動も行う。
+                  <a href="https://kazehakase.jp">kazehakase.jp</a> 
                 </p>
                 <p className="about__person-roles">
                   内装 / 外構 / 木工 / 狩猟採集 / WEB / 音楽

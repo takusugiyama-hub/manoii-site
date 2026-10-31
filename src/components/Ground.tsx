@@ -35,11 +35,14 @@ export default function Ground() {
             できること
           </h2>
 
-          <p className="manoii-ground__lead">
-            土地のこと、庭のこと、家のこと。
-            <br />
-            暮らしのまわりの、いろいろな仕事をしています。
-          </p>
+          <div className="manoii-ground__lead">
+            <p>
+              岩美町を拠点に、水と空気の流れを整える<strong>土地の環境改善</strong>と、<strong>その場所に合った庭づくり</strong>に取り組んでいます。
+            </p>
+            <p>
+              水はけやぬかるみ、木の元気がないといった困りごとから、庭をつくりたいというご相談まで、お聞かせください。
+            </p>
+          </div>
         </header>
 
         <div className="manoii-ground__grid">
@@ -75,6 +78,9 @@ export default function Ground() {
             </article>
           ))}
         </div>
+        <p className="manoii-ground__area">
+          対応地域：鳥取市・岩美町を中心とした鳥取県東部、兵庫県新温泉町。その他の地域もご相談ください。
+        </p>
       </div>
     </section>
   );

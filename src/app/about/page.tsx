@@ -1,8 +1,16 @@
+import { withShareMetadata } from "@/lib/share-metadata";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 import "@/styles/about.css";
+
+export const metadata = withShareMetadata({
+  alternates: { canonical: "/about" },
+  title: "わたしたちのこと｜岩美町のまのいいりょうし",
+  description:
+    "鳥取県岩美町を拠点に活動する「まのいいりょうし」。すぎやまりょうこと風さんの経歴、自然と暮らしに向き合う日々、庭づくりや家をなおす仕事への思いをご紹介します。",
+}, {"url": "/images/home/about-iwami-sea.jpg", "width": 2000, "height": 1404, "alt": "夕暮れの岩美の海"});
 
 type AboutPhotoProps = {
   src: string;

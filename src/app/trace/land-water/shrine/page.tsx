@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import ContactIntro from "@/components/ContactIntro";
+import { withShareMetadata } from "@/lib/share-metadata";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,11 +7,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "@/styles/trace-shrine.css";
 
-export const metadata: Metadata = {
+export const metadata = withShareMetadata({
+  alternates: { canonical: "/trace/land-water/shrine" },
   title: "鳥取東照宮 駐車場 | やったこと | まのいいりょうし",
   description:
     "倒木が目立つようになった鳥取東照宮。駐車場の山際で、逆U字溝、段切り、しがら組みを行い、土中環境の改善に取り組んだ記録です。",
-};
+}, {"url": "/images/trace/toshogu.jpg", "width": 2000, "height": 1500, "alt": "鳥取東照宮での環境改善"});
 
 export default function ShrineTracePage() {
   return (
@@ -586,6 +588,11 @@ export default function ShrineTracePage() {
       {/* ========================================
           BACK
       ======================================== */}
+
+      <ContactIntro
+        description="斜面や木々のこと、土地の環境改善を考えている方へ。"
+        linkLabel="土地の環境改善について相談する"
+      />
 
       <nav
         className="trace-shrine__back"

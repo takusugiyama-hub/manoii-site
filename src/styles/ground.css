@@ -42,20 +42,46 @@
 }
 
 .manoii-ground__lead {
+  max-width: 36em;
+
   margin:
     20px
-    0
+    auto
     0;
 
-  color: var(--muted);
+  text-align: left;
 
-  font-size: 14px;
+  color: #50564b;
+
+  font-size: 16px;
   font-weight: 400;
 
   line-height: 1.9;
   letter-spacing: 0.035em;
 }
 
+
+.manoii-ground__lead p {
+  margin: 0;
+}
+
+.manoii-ground__lead strong {
+  color: var(--foreground);
+  font-weight: 500;
+}
+
+.manoii-ground__lead p + p {
+  margin-top: 1em;
+}
+
+.manoii-ground__area {
+  max-width: 576px;
+  margin: 40px auto 0;
+  color: #50564b;
+  font-size: 13px;
+  line-height: 1.85;
+  text-align: left;
+}
 
 /* ========================================
    GRID
@@ -181,12 +207,17 @@
   .manoii-ground__lead {
     margin-top: 16px;
 
-    font-size: 13px;
+    font-size: 15px;
 
     line-height: 1.85;
     letter-spacing: 0.02em;
   }
 
+
+  .manoii-ground__area {
+    max-width: 540px;
+    font-size: 12px;
+  }
 
   /* GRID */
 

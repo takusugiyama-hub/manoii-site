@@ -1,14 +1,15 @@
-import type { Metadata } from "next";
+import { withShareMetadata } from "@/lib/share-metadata";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 import "@/styles/contact.css";
 
-export const metadata: Metadata = {
+export const metadata = withShareMetadata({
+  alternates: { canonical: "/contact" },
   title: "相談する | まのいいりょうし",
   description: "庭のこと、土地のこと、家のこと。まだ形になっていないことも、まずはお聞かせください。",
-};
+}, {"url": "/images/home/ground-garden.jpg", "width": 2000, "height": 1500, "alt": "まのいいりょうしの庭づくり"});
 
 const consultationExamples = [
   {

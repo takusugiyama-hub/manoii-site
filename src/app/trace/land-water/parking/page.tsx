@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import ContactIntro from "@/components/ContactIntro";
+import { withShareMetadata } from "@/lib/share-metadata";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,11 +7,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "@/styles/trace-parking.css";
 
-export const metadata: Metadata = {
+export const metadata = withShareMetadata({
+  alternates: { canonical: "/trace/land-water/parking" },
   title: "呼吸する駐車場 | やったこと | まのいいりょうし",
   description:
     "雨が降るとぬかるんでいた土地を、水と空気が動ける駐車場へ。呼吸する駐車場ができるまでの記録です。",
-};
+}, {"url": "/images/trace/parking.jpg", "width": 2000, "height": 1499, "alt": "呼吸する駐車場"});
 
 export default function ParkingTracePage() {
   return (
@@ -575,6 +577,11 @@ export default function ParkingTracePage() {
       {/* ========================================
           BACK
       ======================================== */}
+
+      <ContactIntro
+        description="水はけやぬかるみ、駐車場づくりでお困りの方へ。"
+        linkLabel="土地や水はけについて相談する"
+      />
 
       <nav
         className="trace-parking__back"

@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import ContactIntro from "@/components/ContactIntro";
+import { withShareMetadata } from "@/lib/share-metadata";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,11 +7,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "@/styles/trace-alot.css";
 
-export const metadata: Metadata = {
+export const metadata = withShareMetadata({
+  alternates: { canonical: "/trace/garden-plants/alot" },
   title: "A lotの庭 | やったこと | まのいいりょうし",
   description:
     "「将来、森のような庭にしたい」というところから始まった、A lotの庭づくりの記録です。",
-};
+}, {"url": "/images/trace/alot.jpg", "width": 2000, "height": 1500, "alt": "A lotの庭づくり"});
 
 export default function AlotTracePage() {
   return (
@@ -619,6 +621,11 @@ export default function AlotTracePage() {
       {/* ========================================
           BACK
       ======================================== */}
+
+      <ContactIntro
+        description="その場所に合った庭づくりや、草木の育つ環境を考えたい方へ。"
+        linkLabel="庭づくりについて相談する"
+      />
 
       <nav
         className="trace-alot__back"

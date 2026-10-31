@@ -418,9 +418,9 @@
 
 .trace-parking__back {
   padding:
-    0
+    70px
     clamp(28px, 5vw, 80px)
-    140px;
+    70px;
 
   background: var(--background);
 
@@ -662,9 +662,9 @@
 
   .trace-parking__back {
     padding:
-      0
+      50px
       22px
-      100px;
+      50px;
   }
 }
 

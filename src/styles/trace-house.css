@@ -515,9 +515,9 @@
 
 .trace-house__back {
   padding:
-    90px
+    105px
     clamp(28px, 5vw, 80px)
-    120px;
+    105px;
 
   background: #dfe2d7;
 
@@ -815,9 +815,9 @@
 
   .trace-house__back {
     padding:
-      72px
+      86px
       22px
-      100px;
+      86px;
   }
 }
 

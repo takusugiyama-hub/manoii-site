@@ -537,14 +537,45 @@
 
 
 /* ========================================
+   CREDIT
+======================================== */
+
+.trace-shrine__credit {
+  padding: 0 clamp(28px, 5vw, 80px) 80px;
+  background: var(--background);
+}
+
+.trace-shrine__credit-inner {
+  max-width: 580px;
+  margin: 0 auto;
+  padding-top: 24px;
+  border-top: 1px solid rgba(37, 40, 35, 0.15);
+}
+
+.trace-shrine__credit-title {
+  margin: 0;
+  color: var(--foreground);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.9;
+}
+
+.trace-shrine__credit-text {
+  margin: 14px 0 0;
+  color: #50564b;
+  font-size: 13px;
+  line-height: 1.95;
+}
+
+/* ========================================
    BACK
 ======================================== */
 
 .trace-shrine__back {
   padding:
-    0
+    70px
     clamp(28px, 5vw, 80px)
-    140px;
+    70px;
 
   background: var(--background);
 
@@ -885,9 +916,9 @@
 
   .trace-shrine__back {
     padding:
-      0
+      50px
       22px
-      100px;
+      50px;
   }
 }
 

@@ -1,7 +1,15 @@
 import Link from "next/link";
 import "@/styles/contact-intro.css";
 
-export default function ContactIntro() {
+type ContactIntroProps = {
+  description?: string;
+  linkLabel?: string;
+};
+
+export default function ContactIntro({
+  description = "庭のこと、土地のこと、家のこと。",
+  linkLabel = "相談してみる",
+}: ContactIntroProps) {
   return (
     <section className="manoii-contact-intro">
       <div className="manoii-contact-intro__inner">
@@ -11,7 +19,7 @@ export default function ContactIntro() {
 
         <div className="manoii-contact-intro__text">
           <p>
-            庭のこと、土地のこと、家のこと。
+            {description}
           </p>
 
           <p>
@@ -26,7 +34,7 @@ export default function ContactIntro() {
             href="/contact"
             className="manoii-contact-intro__link"
           >
-            相談してみる
+            {linkLabel}
             <span aria-hidden="true"> →</span>
           </Link>
         </div>

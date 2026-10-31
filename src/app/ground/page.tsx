@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { withShareMetadata } from "@/lib/share-metadata";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,11 +6,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "@/styles/ground-page.css";
 
-export const metadata: Metadata = {
+export const metadata = withShareMetadata({
+  alternates: { canonical: "/ground" },
   title: "できること | まのいいりょうし",
   description:
     "土地と水、庭と草木、家と暮らし。まのいいりょうしができることをご紹介します。",
-};
+}, {"url": "/images/home/ground-garden.jpg", "width": 2000, "height": 1500, "alt": "まのいいりょうしの庭づくり"});
 
 const landExamples = [
   "土地の環境改善",

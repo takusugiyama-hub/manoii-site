@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import ContactIntro from "@/components/ContactIntro";
+import { withShareMetadata } from "@/lib/share-metadata";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,11 +7,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "@/styles/trace-house.css";
 
-export const metadata: Metadata = {
+export const metadata = withShareMetadata({
+  alternates: { canonical: "/trace/house-living/old-house" },
   title: "あるもので、家をつくる | やったこと | まのいいりょうし",
   description:
     "友人が手に入れた古民家を、あるものを生かしながら二年近くかけて少しずつ改修した記録です。",
-};
+}, {"url": "/images/trace/old-house.jpg", "width": 2000, "height": 1500, "alt": "古民家の改修"});
 
 const imageBase = "/images/trace/old-house";
 
@@ -821,6 +823,11 @@ export default function OldHouseTracePage() {
       {/* ========================================
           BACK
       ======================================== */}
+
+      <ContactIntro
+        description="古い家の手入れや、あるものを活かした小さな修繕を考えている方へ。"
+        linkLabel="家の手入れについて相談する"
+      />
 
       <nav
         className="trace-house__back"

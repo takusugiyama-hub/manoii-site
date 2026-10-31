@@ -10,6 +10,7 @@ const zenMaruGothic = Zen_Maru_Gothic({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://manoii.jp"),
   title: "まのいいりょうし",
   description: "庭をつくる。土地を起こす。家をなおす。",
 };
@@ -26,6 +27,7 @@ export default function RootLayout({
 
         {/* Cloudflare Web Analytics */}
         <script
+          async
           type="module"
           src="https://static.cloudflareinsights.com/beacon.min.js"
           data-cf-beacon='{"token":"01207094704940f9b0e9182706bf5d3f"}'

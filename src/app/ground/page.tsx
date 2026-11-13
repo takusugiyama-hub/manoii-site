@@ -236,8 +236,8 @@ export default function GroundPage() {
         <Image
           src="/images/ground/garden-tree-before.jpg"
           alt="樹勢回復処置前の金木犀"
-          width={1536}
-          height={2048}
+          width={1611}
+          height={2000}
           className="ground-page__garden-gallery-image"
         />
         <figcaption>
@@ -254,8 +254,8 @@ export default function GroundPage() {
         <Image
           src="/images/ground/garden-tree-after.jpg"
           alt="樹勢回復処置後、葉を茂らせた金木犀"
-          width={1536}
-          height={2048}
+          width={1500}
+          height={2000}
           className="ground-page__garden-gallery-image"
         />
         <figcaption>
@@ -272,8 +272,8 @@ export default function GroundPage() {
         <Image
           src="/images/ground/garden-forest.jpg"
           alt="将来森のようになることを目指してつくった庭"
-          width={2048}
-          height={1536}
+          width={2000}
+          height={1500}
           className="ground-page__garden-gallery-image"
         />
         <figcaption>
@@ -290,8 +290,8 @@ export default function GroundPage() {
         <Image
           src="/images/ground/garden-pruning.jpg"
           alt="庭木の剪定をしている様子"
-          width={1536}
-          height={2048}
+          width={1500}
+          height={2000}
           className="ground-page__garden-gallery-image"
         />
         <figcaption>

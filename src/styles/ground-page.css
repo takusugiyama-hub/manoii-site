@@ -323,8 +323,7 @@
 .ground-page__garden-gallery-image {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: auto;
 }
 
 .ground-page__garden-gallery-item figcaption {

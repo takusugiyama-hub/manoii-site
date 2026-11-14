@@ -68,8 +68,8 @@ export default function ParkingTracePage() {
             <Image
               src="/images/trace/parking/before.jpg"
               alt="施工前の駐車場"
-              width={2048}
-              height={1536}
+              width={2000}
+              height={607}
               priority
               className="trace-parking__image"
             />
@@ -136,8 +136,8 @@ export default function ParkingTracePage() {
             <Image
               src="/images/trace/parking/first-sketch.jpg"
               alt="呼吸する駐車場をつくる前に描いた構想のラフスケッチ"
-              width={1236}
-              height={1248}
+              width={2000}
+              height={1967}
               className="trace-parking__image"
             />
           </figure>
@@ -179,8 +179,8 @@ export default function ParkingTracePage() {
               <Image
                 src="/images/trace/parking/digging-soil.jpg"
                 alt="真砂土の下の粘土質の層を掘り進めている様子"
-                width={2048}
-                height={1536}
+                width={2000}
+                height={1500}
                 className="trace-parking__image"
               />
             </figure>
@@ -189,8 +189,8 @@ export default function ParkingTracePage() {
               <Image
                 src="/images/trace/parking/digging-water.jpg"
                 alt="掘った穴に水が集まっている様子"
-                width={1536}
-                height={2048}
+                width={2000}
+                height={1500}
                 className="trace-parking__image"
               />
             </figure>
@@ -241,8 +241,8 @@ export default function ParkingTracePage() {
             <Image
               src="/images/trace/parking/water-path.jpg"
               alt="水と空気の通り道となる溝をつくっている様子"
-              width={2048}
-              height={1536}
+              width={1500}
+              height={2000}
               className="trace-parking__image"
             />
           </figure>
@@ -260,8 +260,8 @@ export default function ParkingTracePage() {
             <Image
               src="/images/trace/parking/concrete-rubble.jpg"
               alt="解体したコンクリート塀のコンガラ"
-              width={2048}
-              height={1536}
+              width={2000}
+              height={1500}
               className="trace-parking__image"
             />
           </figure>
@@ -338,8 +338,8 @@ export default function ParkingTracePage() {
               <Image
                 src="/images/trace/parking/stone-base.jpg"
                 alt="石を小端立てにして敷き詰めている駐車場の下地"
-                width={2048}
-                height={1536}
+                width={2000}
+                height={1500}
                 className="trace-parking__image"
               />
             </figure>
@@ -348,8 +348,8 @@ export default function ParkingTracePage() {
               <Image
                 src="/images/trace/parking/stones-and-leaves.jpg"
                 alt="石の隙間に落ち葉を詰めている様子"
-                width={1536}
-                height={2048}
+                width={1500}
+                height={2000}
                 className="trace-parking__image"
               />
             </figure>
@@ -402,8 +402,8 @@ export default function ParkingTracePage() {
             <Image
               src="/images/trace/parking/breaking-stones.jpg"
               alt="石を使った下地づくりを続ける作業風景"
-              width={1536}
-              height={2048}
+              width={2000}
+              height={1500}
               className="trace-parking__image"
             />
           </figure>
@@ -484,8 +484,8 @@ export default function ParkingTracePage() {
               <Image
                 src="/images/trace/parking/working-kids.jpg"
                 alt="子どもたちも加わって作業している様子"
-                width={2048}
-                height={1536}
+                width={2000}
+                height={1502}
                 className="trace-parking__image"
               />
             </figure>
@@ -494,8 +494,8 @@ export default function ParkingTracePage() {
               <Image
                 src="/images/trace/parking/working-together.jpg"
                 alt="一緒に石を扱いながら作業している様子"
-                width={1536}
-                height={2048}
+                width={2000}
+                height={1500}
                 className="trace-parking__image"
               />
             </figure>
@@ -524,8 +524,8 @@ export default function ParkingTracePage() {
             <Image
               src="/images/trace/parking/after.jpg"
               alt="完成した呼吸する駐車場"
-              width={2048}
-              height={1536}
+              width={2000}
+              height={610}
               className="trace-parking__image"
             />
           </figure>

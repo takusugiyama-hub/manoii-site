@@ -14,6 +14,8 @@ export const metadata = withShareMetadata({
 
 type AboutPhotoProps = {
   src: string;
+  width?: number;
+  height?: number;
   alt: string;
   className?: string;
   position?: string;
@@ -22,6 +24,8 @@ type AboutPhotoProps = {
 
 function AboutPhoto({
   src,
+  width = 1600,
+  height = 1200,
   alt,
   className = "",
   position = "50% 50%",
@@ -32,8 +36,8 @@ function AboutPhoto({
       <Image
         src={src}
         alt={alt}
-        width={1600}
-        height={1200}
+        width={width}
+        height={height}
         sizes={sizes}
         style={{
           display: "block",
@@ -179,7 +183,7 @@ export default function AboutPage() {
 
             <div className="about__photo-stack">
               <AboutPhoto src="/images/about/gathered-wild-plants.jpg" alt="木の板に並べた山菜" className="about__photo--nature-main" />
-              <AboutPhoto src="/images/about/morel-in-the-woods.jpg" alt="山の地面に生えているアミガサタケ" className="about__photo--nature-morel" position="50% 58%" />
+              <AboutPhoto src="/images/about/morel-in-the-woods.jpg" width={1500} height={2000} alt="山の地面に生えているアミガサタケ" className="about__photo--nature-morel" position="50% 58%" />
               <AboutPhoto src="/images/about/spearfishing-catch.jpg" alt="海に潜って突いた魚" className="about__photo--nature-fish" />
               <AboutPhoto src="/images/about/deer-and-trap.jpg" alt="山に仕掛けた罠と鹿" className="about__photo--nature-deer" position="50% 52%" />
             </div>

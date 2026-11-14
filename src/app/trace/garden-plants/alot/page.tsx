@@ -96,8 +96,8 @@ export default function AlotTracePage() {
             <Image
               src="/images/trace/alot/before.jpg"
               alt="施工前のA lotの庭"
-              width={1600}
-              height={1200}
+              width={2000}
+              height={1333}
               priority
               className="trace-alot__image"
             />
@@ -149,8 +149,8 @@ export default function AlotTracePage() {
               <Image
                 src="/images/trace/alot/drainage-trench.jpg"
                 alt="暗渠のために掘った溝"
-                width={1600}
-                height={1200}
+                width={2000}
+                height={1500}
                 className="trace-alot__image"
               />
             </figure>
@@ -159,8 +159,8 @@ export default function AlotTracePage() {
               <Image
                 src="/images/trace/alot/underground-drain.jpg"
                 alt="逆向きに据えたU字溝"
-                width={1600}
-                height={1200}
+                width={1500}
+                height={2000}
                 className="trace-alot__image"
               />
             </figure>
@@ -218,8 +218,8 @@ export default function AlotTracePage() {
               <Image
                 src="/images/trace/alot/approach-mixing.jpg"
                 alt="アプローチの材料を混ぜている様子"
-                width={1600}
-                height={1200}
+                width={2000}
+                height={1500}
                 className="trace-alot__image"
               />
             </figure>
@@ -228,8 +228,8 @@ export default function AlotTracePage() {
               <Image
                 src="/images/trace/alot/approach-tamping.jpg"
                 alt="土間叩きの要領でアプローチを施工している様子"
-                width={1600}
-                height={1200}
+                width={2000}
+                height={1500}
                 className="trace-alot__image"
               />
             </figure>
@@ -238,8 +238,8 @@ export default function AlotTracePage() {
               <Image
                 src="/images/trace/alot/approach-finished.jpg"
                 alt="仕上がったポーチとアプローチ"
-                width={1600}
-                height={1200}
+                width={2000}
+                height={1500}
                 className="trace-alot__image"
               />
             </figure>
@@ -295,8 +295,8 @@ export default function AlotTracePage() {
             <Image
               src="/images/trace/alot/parking-work.jpg"
               alt="A lotの呼吸する駐車場の施工"
-              width={1600}
-              height={1200}
+              width={1500}
+              height={2000}
               className="trace-alot__image"
             />
           </figure>
@@ -348,8 +348,8 @@ export default function AlotTracePage() {
               <Image
                 src="/images/trace/alot/soil-digging.jpg"
                 alt="植栽部分を深く掘っている様子"
-                width={1600}
-                height={1200}
+                width={1500}
+                height={2000}
                 className="trace-alot__image"
               />
             </figure>
@@ -358,8 +358,8 @@ export default function AlotTracePage() {
               <Image
                 src="/images/trace/alot/forest-soil-log.jpg"
                 alt="地中に朽木を入れている様子"
-                width={1600}
-                height={1200}
+                width={1500}
+                height={2000}
                 className="trace-alot__image"
               />
             </figure>
@@ -370,8 +370,8 @@ export default function AlotTracePage() {
               <Image
                 src="/images/trace/alot/forest-soil-layer.jpg"
                 alt="朽木や石、落ち葉などを重ねた地中の層"
-                width={1600}
-                height={1200}
+                width={2000}
+                height={1499}
                 className="trace-alot__image"
               />
             </figure>
@@ -380,8 +380,8 @@ export default function AlotTracePage() {
               <Image
                 src="/images/trace/alot/planting-mound.jpg"
                 alt="植栽のためにつくられたマウンド"
-                width={1600}
-                height={1200}
+                width={2000}
+                height={1500}
                 className="trace-alot__image"
               />
             </figure>
@@ -430,8 +430,8 @@ export default function AlotTracePage() {
               <Image
                 src="/images/trace/alot/concrete-approach-base.jpg"
                 alt="土を活かすためにつくった車用アプローチの下地"
-                width={1600}
-                height={1200}
+                width={2000}
+                height={1500}
                 className="trace-alot__image"
               />
             </figure>
@@ -440,8 +440,8 @@ export default function AlotTracePage() {
               <Image
                 src="/images/trace/alot/concrete-approach-finished.jpg"
                 alt="洗い出しで仕上げた車用アプローチ"
-                width={1600}
-                height={1200}
+                width={2000}
+                height={1500}
                 className="trace-alot__image"
               />
             </figure>
@@ -483,8 +483,8 @@ export default function AlotTracePage() {
             <Image
               src="/images/trace/alot/planting.jpg"
               alt="A lotの庭に木々を植えている様子"
-              width={1600}
-              height={1200}
+              width={2000}
+              height={1500}
               className="trace-alot__image"
             />
           </figure>
@@ -502,8 +502,8 @@ export default function AlotTracePage() {
             <Image
               src="/images/trace/alot/fu-tree.jpg"
               alt="植えた当時のシンボルツリーのフウ"
-              width={1200}
-              height={1200}
+              width={2000}
+              height={2000}
               className="trace-alot__image"
             />
           </figure>
@@ -546,8 +546,8 @@ export default function AlotTracePage() {
             <Image
               src="/images/trace/alot/after.jpg"
               alt="施工後のA lotの庭"
-              width={1600}
-              height={1200}
+              width={2000}
+              height={888}
               className="trace-alot__image"
             />
           </figure>
@@ -588,8 +588,8 @@ export default function AlotTracePage() {
             <Image
               src="/images/trace/alot/later.jpg"
               alt="時間が経ったA lotの庭"
-              width={1600}
-              height={1200}
+              width={2000}
+              height={1500}
               className="trace-alot__image"
             />
           </figure>

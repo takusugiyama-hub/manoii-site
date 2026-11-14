@@ -86,8 +86,8 @@ export default function OldHouseTracePage() {
             <Image
               src={`${imageBase}/house-exterior.jpg`}
               alt="改修した古民家の外観"
-              width={4032}
-              height={3024}
+              width={2000}
+              height={1500}
               priority
               className="trace-house__image"
             />
@@ -137,8 +137,8 @@ export default function OldHouseTracePage() {
               <Image
                 src={`${imageBase}/demolition-03.jpg`}
                 alt="解体後の古民家の室内"
-                width={4032}
-                height={3024}
+                width={2000}
+                height={1500}
                 className="trace-house__image"
               />
             </figure>
@@ -159,8 +159,8 @@ export default function OldHouseTracePage() {
               <Image
                 src={`${imageBase}/subfloor-water.jpg`}
                 alt="水が残る改修当初の床下"
-                width={4032}
-                height={3024}
+                width={2000}
+                height={1500}
                 className="trace-house__image"
               />
             </figure>
@@ -281,8 +281,8 @@ export default function OldHouseTracePage() {
                 <Image
                   src={`${imageBase}/future-room.jpg`}
                   alt="これから部屋をつくっていく改修途中の室内"
-                  width={4032}
-                  height={3024}
+                  width={2000}
+                  height={1500}
                   className="trace-house__imagine-image"
                 />
               </figure>
@@ -292,8 +292,8 @@ export default function OldHouseTracePage() {
                 <Image
                   src={`${imageBase}/wall-framing.jpg`}
                   alt="壁の下地と再利用する既存の建具"
-                  width={3024}
-                  height={4032}
+                  width={1500}
+                  height={2000}
                   className="trace-house__imagine-image"
                 />
               </figure>
@@ -369,8 +369,8 @@ export default function OldHouseTracePage() {
     <Image
       src={`${imageBase}/salvaged-wood-01.jpg`}
       alt="古民家の改修に使う古材や廃材"
-      width={4032}
-      height={3024}
+      width={2000}
+      height={1500}
       className="trace-house__image"
     />
   </figure>
@@ -380,8 +380,8 @@ export default function OldHouseTracePage() {
     <Image
       src={`${imageBase}/salvaged-wood-02.jpg`}
       alt="改修に使うさまざまな形の木材"
-      width={3024}
-      height={4032}
+      width={2000}
+      height={1500}
       className="trace-house__image"
     />
   </figure>
@@ -391,8 +391,8 @@ export default function OldHouseTracePage() {
     <Image
       src={`${imageBase}/stairs-01.jpg`}
       alt="再利用する既存の階段"
-      width={3024}
-      height={4032}
+      width={2000}
+      height={1500}
       className="trace-house__image"
     />
   </figure>
@@ -456,8 +456,8 @@ export default function OldHouseTracePage() {
         <Image
           src={`${imageBase}/earth-wall-straw.jpg`}
           alt="土壁の土に藁を混ぜている様子"
-          width={4032}
-          height={3024}
+          width={2000}
+          height={1500}
           className="trace-house__image"
         />
       </figure>
@@ -466,8 +466,8 @@ export default function OldHouseTracePage() {
         <Image
           src={`${imageBase}/earth-wall-mixing.jpg`}
           alt="土壁の土を練っている様子"
-          width={4032}
-          height={3024}
+          width={2000}
+          height={1500}
           className="trace-house__image"
         />
       </figure>
@@ -476,8 +476,8 @@ export default function OldHouseTracePage() {
         <Image
           src={`${imageBase}/earth-wall-plaster-01.jpg`}
           alt="この家の土を壁に塗っている様子"
-          width={3024}
-          height={4032}
+          width={1500}
+          height={2000}
           className="trace-house__image"
         />
       </figure>
@@ -561,8 +561,8 @@ export default function OldHouseTracePage() {
         <Image
           src={`${imageBase}/workshop-before.jpg`}
           alt="床を外し、土間をつくる前の仕事場"
-          width={4032}
-          height={3024}
+          width={2000}
+          height={1500}
           className="trace-house__workshop-image"
         />
       </figure>
@@ -572,8 +572,8 @@ export default function OldHouseTracePage() {
         <Image
           src={`${imageBase}/workshop-base.jpg`}
           alt="石や瓦を使って土間の下地をつくる様子"
-          width={3024}
-          height={4032}
+          width={2000}
+          height={1500}
           className="trace-house__workshop-image"
         />
       </figure>
@@ -583,8 +583,8 @@ export default function OldHouseTracePage() {
         <Image
           src={`${imageBase}/workshop-soil-prep.jpg`}
           alt="この家から出た土をふるって準備する様子"
-          width={4032}
-          height={3024}
+          width={2000}
+          height={1500}
           className="trace-house__workshop-image"
         />
       </figure>
@@ -594,8 +594,8 @@ export default function OldHouseTracePage() {
         <Image
           src={`${imageBase}/workshop-tataki.jpg`}
           alt="土を入れ、叩いて土間をつくる様子"
-          width={4032}
-          height={3024}
+          width={2000}
+          height={1500}
           className="trace-house__workshop-image"
         />
       </figure>
@@ -605,8 +605,8 @@ export default function OldHouseTracePage() {
         <Image
           src={`${imageBase}/workshop-finished.jpg`}
           alt="できあがった叩きの土間"
-          width={3024}
-          height={4032}
+          width={1500}
+          height={2000}
           className="trace-house__workshop-image"
         />
       </figure>
@@ -672,8 +672,8 @@ export default function OldHouseTracePage() {
     <Image
       src={`${imageBase}/kitchen-finished.jpg`}
       alt="完成したキッチン"
-      width={4032}
-      height={3024}
+      width={2000}
+      height={1500}
       className="trace-house__image"
     />
   </figure>
@@ -683,8 +683,8 @@ export default function OldHouseTracePage() {
     <Image
       src={`${imageBase}/wood-stove.jpg`}
       alt="薪ストーブを設置した場所"
-      width={3024}
-      height={4032}
+      width={1500}
+      height={2000}
       className="trace-house__image"
     />
   </figure>
@@ -694,8 +694,8 @@ export default function OldHouseTracePage() {
     <Image
       src={`${imageBase}/bathroom.jpg`}
       alt="完成した浴室"
-      width={3024}
-      height={4032}
+      width={1500}
+      height={2000}
       className="trace-house__image"
     />
   </figure>
@@ -705,8 +705,8 @@ export default function OldHouseTracePage() {
     <Image
       src={`${imageBase}/toilet.jpg`}
       alt="完成したトイレ"
-      width={3024}
-      height={4032}
+      width={1500}
+      height={2000}
       className="trace-house__image"
     />
   </figure>
@@ -787,8 +787,8 @@ export default function OldHouseTracePage() {
   <Image
     src={`${imageBase}/finished-room-01.jpg`}
     alt="改修後の古民家の室内"
-    width={4032}
-    height={3024}
+    width={2000}
+    height={1500}
     className="trace-house__image"
   />
 </figure>
@@ -800,8 +800,8 @@ export default function OldHouseTracePage() {
     <Image
       src={`${imageBase}/demolition-02.jpg`}
       alt="改修初期の古民家の室内"
-      width={4032}
-      height={3024}
+      width={2000}
+      height={1500}
       className="trace-house__image"
     />
   </figure>
@@ -811,8 +811,8 @@ export default function OldHouseTracePage() {
     <Image
       src={`${imageBase}/finished-room-02.jpg`}
       alt="改修後の同じ場所の室内"
-      width={4032}
-      height={3024}
+      width={2000}
+      height={1500}
       className="trace-house__image"
     />
   </figure>

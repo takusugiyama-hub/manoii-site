@@ -12,7 +12,7 @@ export const metadata = withShareMetadata({
   title: "鳥取東照宮 駐車場 | やったこと | まのいいりょうし",
   description:
     "倒木が目立つようになった鳥取東照宮。駐車場の山際で、逆U字溝、段切り、しがら組みを行い、土中環境の改善に取り組んだ記録です。",
-}, {"url": "/images/trace/toshogu.jpg", "width": 2000, "height": 1500, "alt": "鳥取東照宮での環境改善"});
+}, {"url": "/images/trace/toshogu.jpg", "width": 1500, "height": 2000, "alt": "鳥取東照宮での環境改善"});
 
 export default function ShrineTracePage() {
   return (
@@ -95,8 +95,8 @@ export default function ShrineTracePage() {
         <Image
           src="/images/trace/shrine/before.jpg"
           alt="施工前の鳥取東照宮駐車場の山際"
-          width={3024}
-          height={4032}
+          width={1500}
+          height={2000}
           priority
           className="trace-shrine__image"
         />
@@ -120,8 +120,8 @@ export default function ShrineTracePage() {
         <Image
           src="/images/trace/shrine/digging-ditch.jpg"
           alt="埋もれていたU字溝を掘り起こしている様子"
-          width={3024}
-          height={4032}
+          width={2000}
+          height={1500}
           className="trace-shrine__image"
         />
       </figure>
@@ -159,8 +159,8 @@ export default function ShrineTracePage() {
           <Image
             src="/images/trace/shrine/buried-waste.jpg"
             alt="掘り起こした際に地中から出てきたゴミ"
-            width={3024}
-            height={4032}
+            width={1500}
+            height={2000}
             className="trace-shrine__image"
           />
 
@@ -221,8 +221,8 @@ export default function ShrineTracePage() {
           <Image
             src="/images/trace/shrine/reverse-ditch-base.jpg"
             alt="山際に沿ってU字溝を掘り起こした施工箇所全体"
-            width={4032}
-            height={3024}
+            width={2000}
+            height={1500}
             className="trace-shrine__image"
           />
         </figure>
@@ -231,8 +231,8 @@ export default function ShrineTracePage() {
           <Image
             src="/images/trace/shrine/roof-tiles.jpg"
             alt="古瓦を割って溝に小端立てしている様子"
-            width={3024}
-            height={4032}
+            width={1500}
+            height={2000}
             className="trace-shrine__image"
           />
         </figure>
@@ -241,8 +241,8 @@ export default function ShrineTracePage() {
           <Image
             src="/images/trace/shrine/reverse-ditch-work.jpg"
             alt="逆U字溝の施工途中の溝"
-            width={4032}
-            height={3024}
+            width={2000}
+            height={1500}
             className="trace-shrine__image"
           />
         </figure>
@@ -267,8 +267,8 @@ export default function ShrineTracePage() {
         <Image
           src="/images/trace/shrine/terracing.jpg"
           alt="段切りした斜面に朽ちた竹を据え、生木の杭を打った様子"
-          width={3024}
-          height={4032}
+          width={1500}
+          height={2000}
           className="trace-shrine__image"
         />
       </figure>
@@ -368,8 +368,8 @@ export default function ShrineTracePage() {
           <Image
             src="/images/trace/shrine/shigara-work.jpg"
             alt="剪定枝を使ってしがらを組んでいる様子"
-            width={4032}
-            height={3024}
+            width={1500}
+            height={2000}
             className="trace-shrine__image"
           />
         </figure>
@@ -378,8 +378,8 @@ export default function ShrineTracePage() {
           <Image
             src="/images/trace/shrine/shigara.jpg"
             alt="斜面に組まれたしがら"
-            width={3024}
-            height={4032}
+            width={1500}
+            height={2000}
             className="trace-shrine__image"
           />
         </figure>
@@ -411,8 +411,8 @@ export default function ShrineTracePage() {
             <Image
               src="/images/trace/shrine/after.jpg"
               alt="施工を終えた鳥取東照宮駐車場の山際"
-              width={4032}
-              height={3024}
+              width={2000}
+              height={1500}
               className="trace-shrine__image"
             />
           </figure>
@@ -440,8 +440,8 @@ export default function ShrineTracePage() {
               <Image
                 src="/images/trace/shrine/after-detail.jpg"
                 alt="施工後の山際を駐車場に沿って見た様子"
-                width={3024}
-                height={4032}
+                width={2000}
+                height={1500}
                 className="trace-shrine__image"
               />
             </figure>
@@ -470,8 +470,8 @@ export default function ShrineTracePage() {
               <Image
                 src="/images/trace/shrine/six-months-shigara.jpg"
                 alt="施工から半年後、朽ちながら土を留めているしがら"
-                width={3024}
-                height={4032}
+                width={1500}
+                height={2000}
                 className="trace-shrine__image"
               />
             </figure>
@@ -480,8 +480,8 @@ export default function ShrineTracePage() {
               <Image
                 src="/images/trace/shrine/six-months-keyaki.jpg"
                 alt="施工から半年後、逆U字溝を施したあたりに芽を出したケヤキの実生"
-                width={3024}
-                height={4032}
+                width={1500}
+                height={2000}
                 className="trace-shrine__image"
               />
             </figure>

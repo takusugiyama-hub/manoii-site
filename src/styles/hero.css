@@ -1,6 +1,8 @@
-/* HERO: image and introduction follow the normal document flow. */
+/* Keep the headline in its original position; introduction follows the image. */
 .manoii-world {
-  padding: 110px 0 72px;
+  --hero-image-width: min(70vw, 1000px);
+  position: relative;
+  padding: calc(100vh - var(--hero-image-width) * 1693 / 2217 - 20px) 0 72px;
   background: var(--background);
 }
 
@@ -11,15 +13,20 @@
 
 .manoii-world__image {
   display: block;
-  width: min(70vw, 1000px);
+  width: var(--hero-image-width);
   height: auto;
   user-select: none;
   filter: saturate(0.98) contrast(0.99);
 }
 
 .manoii-world__message-position {
+  position: absolute;
+  z-index: 4;
+  top: 30vh;
+  left: 50%;
+  transform: translateX(-50%);
   width: min(90vw, 1000px);
-  margin: 48px auto 40px;
+  margin: 0;
   text-align: center;
 }
 
@@ -38,7 +45,7 @@
 
 .manoii-world__underground-message {
   width: min(90vw, 800px);
-  margin: 0 auto;
+  margin: 48px auto 0;
   color: rgb(37, 40, 35);
   text-align: center;
 }
@@ -68,7 +75,8 @@
 
 @media (max-width: 800px) {
   .manoii-world {
-    padding: 96px 0 56px;
+    --hero-image-width: 100vw;
+    padding: calc(100svh - var(--hero-image-width) * 1693 / 2217 - 40px) 0 56px;
   }
 
   .manoii-world__image {
@@ -76,8 +84,8 @@
   }
 
   .manoii-world__message-position {
+    top: 20vh;
     width: calc(100% - 34px);
-    margin: 32px auto;
   }
 
   .manoii-world__message-main {
@@ -87,6 +95,7 @@
 
   .manoii-world__underground-message {
     width: calc(100% - 44px);
+    margin-top: 32px;
   }
 
   .manoii-world__underground-title {

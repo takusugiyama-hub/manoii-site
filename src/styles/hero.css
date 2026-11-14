@@ -251,7 +251,7 @@
         )
         + var(--hero-offset-y)
         + var(--hero-scroll-shift)
-        + 220px
+        + 380px
       );
   }
 

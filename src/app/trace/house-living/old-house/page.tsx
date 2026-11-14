@@ -159,8 +159,8 @@ export default function OldHouseTracePage() {
               <Image
                 src={`${imageBase}/subfloor-water.jpg`}
                 alt="水が残る改修当初の床下"
-                width={2000}
-                height={1500}
+                width={1500}
+                height={2000}
                 className="trace-house__image"
               />
             </figure>
@@ -380,8 +380,8 @@ export default function OldHouseTracePage() {
     <Image
       src={`${imageBase}/salvaged-wood-02.jpg`}
       alt="改修に使うさまざまな形の木材"
-      width={2000}
-      height={1500}
+      width={1500}
+      height={2000}
       className="trace-house__image"
     />
   </figure>
@@ -391,8 +391,8 @@ export default function OldHouseTracePage() {
     <Image
       src={`${imageBase}/stairs-01.jpg`}
       alt="再利用する既存の階段"
-      width={2000}
-      height={1500}
+      width={1500}
+      height={2000}
       className="trace-house__image"
     />
   </figure>
@@ -456,8 +456,8 @@ export default function OldHouseTracePage() {
         <Image
           src={`${imageBase}/earth-wall-straw.jpg`}
           alt="土壁の土に藁を混ぜている様子"
-          width={2000}
-          height={1500}
+          width={1500}
+          height={2000}
           className="trace-house__image"
         />
       </figure>
@@ -466,8 +466,8 @@ export default function OldHouseTracePage() {
         <Image
           src={`${imageBase}/earth-wall-mixing.jpg`}
           alt="土壁の土を練っている様子"
-          width={2000}
-          height={1500}
+          width={1500}
+          height={2000}
           className="trace-house__image"
         />
       </figure>
@@ -572,8 +572,8 @@ export default function OldHouseTracePage() {
         <Image
           src={`${imageBase}/workshop-base.jpg`}
           alt="石や瓦を使って土間の下地をつくる様子"
-          width={2000}
-          height={1500}
+          width={1500}
+          height={2000}
           className="trace-house__workshop-image"
         />
       </figure>

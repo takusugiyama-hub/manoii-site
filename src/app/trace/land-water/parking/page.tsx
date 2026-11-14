@@ -179,8 +179,8 @@ export default function ParkingTracePage() {
               <Image
                 src="/images/trace/parking/digging-soil.jpg"
                 alt="真砂土の下の粘土質の層を掘り進めている様子"
-                width={2000}
-                height={1500}
+                width={1500}
+                height={2000}
                 className="trace-parking__image"
               />
             </figure>
@@ -189,8 +189,8 @@ export default function ParkingTracePage() {
               <Image
                 src="/images/trace/parking/digging-water.jpg"
                 alt="掘った穴に水が集まっている様子"
-                width={2000}
-                height={1500}
+                width={1500}
+                height={2000}
                 className="trace-parking__image"
               />
             </figure>

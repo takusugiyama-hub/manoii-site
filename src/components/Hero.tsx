@@ -74,37 +74,31 @@ export default function Hero() {
 
       <div className="manoii-world__message-position">
         <h1 className="manoii-world__message-main">
-          <span>人と自然のあいだに、</span>
-          <span>まのいい暮らしを探求する</span>
+          <span>土地を整え、木を育て、</span>
+          <span>暮らしをつくる。</span>
         </h1>
       </div>
 
       <div className="manoii-world__underground-message">
         <h2 className="manoii-world__underground-title">
-          まのいいとは
+          まのいいりょうしの仕事
         </h2>
 
         <div className="manoii-world__underground-text">
           <p>
-            <strong>「ま」は、あいだ。</strong>
-            <br />
-            人と自然、人と人、ものともの。
-            <br />
-            そのあいだにある関係の、心地よいところを探す。
+            鳥取県岩美町を拠点に、土地の環境改善、庭づくり、剪定や樹勢回復、家まわりの仕事をしています。
           </p>
 
           <p>
-            あるものを活かし、
-            <br className="manoii-mobile-only" />
-            思いがけない巡り合わせを楽しむ。
+            水がたまる。木が弱る。庭をどうにかしたい。
           </p>
 
           <p>
-            <strong>
-              そんな「間」のいいことを、
-              <br />
-              私たちは、まのいいと呼んでいます。
-            </strong>
+            そんな困りごとにも、まずはその場所で何が起きているのかをよく見ることから始めます。
+          </p>
+
+          <p>
+            今あるものを活かし、自然の働きに目を向けながら、人と自然のあいだにある心地よい「間」を探しています。
           </p>
         </div>
       </div>

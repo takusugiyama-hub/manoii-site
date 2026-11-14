@@ -1,63 +1,9 @@
-"use client";
-
 import Image from "next/image";
-import { useEffect, useRef } from "react";
 import "@/styles/hero.css";
 
 export default function Hero() {
-  const heroRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const hero = heroRef.current;
-    if (!hero) return;
-
-    let ticking = false;
-
-    const updateHero = () => {
-      const rect = hero.getBoundingClientRect();
-      const scrollableDistance =
-        hero.offsetHeight - window.innerHeight;
-
-      const scrolled = Math.max(0, -rect.top);
-
-      const progress =
-        scrollableDistance > 0
-          ? Math.min(1, scrolled / scrollableDistance)
-          : 0;
-
-      hero.style.setProperty(
-        "--hero-progress",
-        progress.toString()
-      );
-
-      ticking = false;
-    };
-
-    const handleScroll = () => {
-      if (ticking) return;
-
-      ticking = true;
-      requestAnimationFrame(updateHero);
-    };
-
-    updateHero();
-
-    window.addEventListener("scroll", handleScroll, {
-      passive: true,
-    });
-    window.addEventListener("resize", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleScroll);
-    };
-  }, []);
-
   return (
-    <section
-      ref={heroRef}
-      className="manoii-world"
-    >
+    <section className="manoii-world">
       <div className="manoii-world__window">
         <div className="manoii-world__position">
           <Image
@@ -98,7 +44,9 @@ export default function Hero() {
           </p>
 
           <p>
-            今あるものを活かし、自然の働きに目を向けながら、人と自然のあいだにある心地よい「間」を探しています。
+            今あるものを活かし、自然の働きに目を向けながら、
+            <br className="manoii-desktop-only" />
+            人と自然のあいだにある心地よい「間」を探しています。
           </p>
         </div>
       </div>

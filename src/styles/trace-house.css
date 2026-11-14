@@ -275,7 +275,7 @@
 }
 
 .trace-house__imagine-images figure {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
 }
 
@@ -875,4 +875,16 @@
      08 / FINAL
   ======================================== */
 
+}
+
+/* 同じ列の写真は横写真の高さでそろえる。 */
+.trace-house__materials-gallery img,
+.trace-house__process--wall img,
+.trace-house__living-grid img,
+.trace-house__final-bottom img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }

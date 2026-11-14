@@ -244,6 +244,7 @@
 .ground-page__land-gallery-image {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
@@ -324,6 +325,8 @@
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
 .ground-page__garden-gallery-item figcaption {

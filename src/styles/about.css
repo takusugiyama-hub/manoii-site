@@ -574,3 +574,32 @@
     font-size: 15px;
   }
 }
+
+/* 写真を並べる列では、横写真を基準に高さをそろえる。 */
+.about__photo--nature-morel {
+  align-self: stretch;
+  aspect-ratio: auto;
+}
+
+.about__photo--nature-morel img,
+.about__photo--kankankodo-detail img {
+  position: absolute;
+  inset: 0;
+}
+
+.about__photo--nature-fish {
+  margin-top: 0;
+}
+
+.about__kankankodo-photos {
+  align-items: stretch;
+}
+
+.about__photo--kankankodo-main {
+  aspect-ratio: 4 / 3;
+}
+
+.about__photo--kankankodo-detail {
+  aspect-ratio: auto;
+  margin-bottom: 0;
+}

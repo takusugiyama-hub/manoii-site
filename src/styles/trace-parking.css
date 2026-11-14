@@ -689,3 +689,14 @@
     grid-column: auto;
   }
 }
+
+/* 同じ列の写真は横写真の高さでそろえる。 */
+.trace-parking__digging-images img,
+.trace-parking__stone-images img,
+.trace-parking__everyone-images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}

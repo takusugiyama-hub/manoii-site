@@ -948,3 +948,56 @@
     width: 72%;
   }
 }
+
+/* 幅の異なる写真も、同じ列では横写真の高さにそろえる。 */
+.trace-shrine__reverse-gallery,
+.trace-shrine__shigara-gallery {
+  width: 100%;
+  min-width: 0;
+  align-items: stretch;
+}
+
+.trace-shrine__reverse-main img,
+.trace-shrine__reverse-lower img,
+.trace-shrine__shigara-main img,
+.trace-shrine__later-images figure:nth-child(2) img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.trace-shrine__reverse-detail,
+.trace-shrine__shigara-detail,
+.trace-shrine__later-images figure:first-child {
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.trace-shrine__shigara-detail,
+.trace-shrine__later-images figure:nth-child(2) {
+  margin-top: 0;
+}
+
+.trace-shrine__reverse-detail img,
+.trace-shrine__shigara-detail img,
+.trace-shrine__later-images figure:first-child img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .trace-shrine__shigara-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .trace-shrine__shigara-gallery {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.72fr);
+  }
+}

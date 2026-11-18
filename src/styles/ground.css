@@ -84,6 +84,38 @@
 }
 
 /* ========================================
+   WEB PRODUCTION
+======================================== */
+
+.manoii-ground__web {
+  max-width: 720px;
+  margin: 64px auto 0;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+  color: #50564b;
+  font-size: 14px;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+}
+
+.manoii-ground__web-heading {
+  margin: 0 0 20px;
+  color: var(--foreground);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+}
+
+.manoii-ground__web p {
+  margin: 0;
+}
+
+.manoii-ground__web p + p {
+  margin-top: 1em;
+}
+
+/* ========================================
    GRID
 ======================================== */
 
@@ -220,6 +252,16 @@
   }
 
   /* GRID */
+
+  .manoii-ground__web {
+    margin-top: 44px;
+    padding-top: 28px;
+    font-size: 13px;
+  }
+
+  .manoii-ground__web-heading {
+    font-size: 16px;
+  }
 
   .manoii-ground__grid {
     grid-template-columns: 1fr;

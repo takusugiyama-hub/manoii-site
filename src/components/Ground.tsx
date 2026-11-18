@@ -81,6 +81,20 @@ export default function Ground() {
         <p className="manoii-ground__area">
           対応地域：鳥取市・岩美町を中心とした鳥取県東部、兵庫県新温泉町。その他の地域もご相談ください。
         </p>
+        <section
+          className="manoii-ground__web"
+          aria-labelledby="web-production-heading"
+        >
+          <h3 id="web-production-heading" className="manoii-ground__web-heading">
+            Webサイト・Webアプリケーションの制作
+          </h3>
+          <p>
+            まのいいりょうしでは、WebサイトやWebアプリケーションの設計・開発も行っています。
+          </p>
+          <p>
+            Web制作を担当する風さん（杉山拓）は、以前IT企業でWebアプリケーションの開発やディレクションに従事していました。その経験を活かし、現在は米国の書店のWebサイト開発を手がけています。
+          </p>
+        </section>
       </div>
     </section>
   );
